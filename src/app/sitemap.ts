@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/contact/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/request-a-quote/', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/seo-analysis/', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: '/who-we-serve/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/ask/', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/resources/', priority: 0.6, changeFrequency: 'monthly' as const },

@@ -148,14 +148,22 @@ export default function Navbar() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
-                    <span className="text-xs">All services include transparent monthly reporting</span>
+                    <span className="text-xs">Free analysis tools — no signup required</span>
                   </div>
-                  <a
-                    href="/request-a-quote/"
-                    className="flex-shrink-0 inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
-                  >
-                    Free Analysis →
-                  </a>
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <a
+                      href="/request-a-quote/"
+                      className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
+                    >
+                      ORM Scan →
+                    </a>
+                    <a
+                      href="/seo-analysis/"
+                      className="inline-flex items-center gap-1.5 bg-indigo-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-indigo-500 transition-colors shadow-sm shadow-indigo-600/25"
+                    >
+                      SEO Audit →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -278,12 +286,20 @@ export default function Navbar() {
               </svg>
               Call 504.233.4365
             </a>
-            <a
-              href="/request-a-quote/"
-              className="mt-3 flex items-center justify-center w-full border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors text-sm"
-            >
-              Get a Free Analysis
-            </a>
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              <a
+                href="/request-a-quote/"
+                className="flex items-center justify-center border-2 border-blue-600 text-blue-600 px-4 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors text-sm"
+              >
+                ORM Scan
+              </a>
+              <a
+                href="/seo-analysis/"
+                className="flex items-center justify-center border-2 border-indigo-600 text-indigo-600 px-4 py-3 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-sm"
+              >
+                SEO Audit
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -47,9 +47,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-5 gap-10">
           {/* Brand column — spans 2 */}
           <div className="md:col-span-2">
-            <div className="mb-3">
+            <a href="/" className="inline-block mb-3">
               <img src="/logo.png" alt="DiamondLinks" className="h-7 w-auto brightness-0 invert" />
-            </div>
+            </a>
             <p className="text-sm text-gray-500 mb-7 leading-relaxed max-w-xs">
               New Orleans-based ORM &amp; SEO agency with 30+ years of combined expertise. We help brands take control of their online narrative and protect what matters most.
             </p>

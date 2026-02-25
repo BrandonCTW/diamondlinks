@@ -49,9 +49,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
 
         {/* Logo */}
-        <div className="flex items-center flex-shrink-0">
+        <a href="/" className="flex items-center flex-shrink-0">
           <img src="/logo.png" alt="DiamondLinks" className="h-8 w-auto" />
-        </div>
+        </a>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-0.5 text-sm font-medium text-gray-700">

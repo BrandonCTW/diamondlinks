@@ -1,0 +1,1 @@
+- Made hero section full-viewport-height (min-h-[calc(100vh-4rem)] + flex items-center) and added a diagonal white clip mask at the bottom for a premium angled transition into the next section.

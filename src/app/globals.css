@@ -1,0 +1,338 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Hero micro-animations */
+@keyframes shimmer-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes eyebrow-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+  50% { box-shadow: 0 0 20px 2px rgba(59, 130, 246, 0.15); }
+}
+
+.hero-cta-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-cta-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    transparent 60%
+  );
+  animation: shimmer-sweep 3.5s ease-in-out infinite;
+  animation-delay: 2s;
+  pointer-events: none;
+}
+
+.hero-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+/* When hero-float is combined with hero-entrance-right, compose both animations */
+.hero-float.hero-entrance-right {
+  animation: hero-enter-right 1s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             gentle-float 6s ease-in-out 1.2s infinite;
+}
+
+.hero-eyebrow-glow {
+  animation: eyebrow-glow 4s ease-in-out infinite;
+}
+
+/* When eyebrow glow is combined with hero-entrance, compose both animations */
+.hero-eyebrow-glow.hero-entrance {
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             eyebrow-glow 4s ease-in-out 1s infinite;
+}
+
+/* Hero entrance animation — staggered reveal on page load */
+@keyframes hero-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-enter-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.hero-entrance {
+  opacity: 0;
+  animation: hero-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-entrance-right {
+  opacity: 0;
+  animation: hero-enter-right 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stagger delays for hero entrance — each group appears 120ms after the previous */
+.hero-entrance-d1 { animation-delay: 0ms; }
+.hero-entrance-d2 { animation-delay: 120ms; }
+.hero-entrance-d3 { animation-delay: 240ms; }
+.hero-entrance-d4 { animation-delay: 360ms; }
+.hero-entrance-d5 { animation-delay: 480ms; }
+.hero-entrance-d6 { animation-delay: 600ms; }
+.hero-entrance-d7 { animation-delay: 750ms; }
+.hero-entrance-d8 { animation-delay: 900ms; }
+
+/* Scroll-triggered section reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.scroll-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered card entrance animations — children cascade in when parent section reveals */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-revealed .stagger-children > *,
+.stagger-children.scroll-revealed > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-revealed .stagger-children > *:nth-child(1),
+.stagger-children.scroll-revealed > *:nth-child(1) { transition-delay: 0ms; }
+.scroll-revealed .stagger-children > *:nth-child(2),
+.stagger-children.scroll-revealed > *:nth-child(2) { transition-delay: 80ms; }
+.scroll-revealed .stagger-children > *:nth-child(3),
+.stagger-children.scroll-revealed > *:nth-child(3) { transition-delay: 160ms; }
+.scroll-revealed .stagger-children > *:nth-child(4),
+.stagger-children.scroll-revealed > *:nth-child(4) { transition-delay: 240ms; }
+.scroll-revealed .stagger-children > *:nth-child(5),
+.stagger-children.scroll-revealed > *:nth-child(5) { transition-delay: 320ms; }
+.scroll-revealed .stagger-children > *:nth-child(6),
+.stagger-children.scroll-revealed > *:nth-child(6) { transition-delay: 400ms; }
+
+/* Variant: stagger from left (slide in from left instead of bottom) */
+.stagger-children-left > * {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-revealed .stagger-children-left > *,
+.stagger-children-left.scroll-revealed > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-revealed .stagger-children-left > *:nth-child(1),
+.stagger-children-left.scroll-revealed > *:nth-child(1) { transition-delay: 0ms; }
+.scroll-revealed .stagger-children-left > *:nth-child(2),
+.stagger-children-left.scroll-revealed > *:nth-child(2) { transition-delay: 80ms; }
+.scroll-revealed .stagger-children-left > *:nth-child(3),
+.stagger-children-left.scroll-revealed > *:nth-child(3) { transition-delay: 160ms; }
+.scroll-revealed .stagger-children-left > *:nth-child(4),
+.stagger-children-left.scroll-revealed > *:nth-child(4) { transition-delay: 240ms; }
+.scroll-revealed .stagger-children-left > *:nth-child(5),
+.stagger-children-left.scroll-revealed > *:nth-child(5) { transition-delay: 320ms; }
+.scroll-revealed .stagger-children-left > *:nth-child(6),
+.stagger-children-left.scroll-revealed > *:nth-child(6) { transition-delay: 400ms; }
+
+/* Variant: scale-up (for stat cards / badges) */
+.stagger-children-scale > * {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-revealed .stagger-children-scale > *,
+.stagger-children-scale.scroll-revealed > * {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-revealed .stagger-children-scale > *:nth-child(1),
+.stagger-children-scale.scroll-revealed > *:nth-child(1) { transition-delay: 0ms; }
+.scroll-revealed .stagger-children-scale > *:nth-child(2),
+.stagger-children-scale.scroll-revealed > *:nth-child(2) { transition-delay: 100ms; }
+.scroll-revealed .stagger-children-scale > *:nth-child(3),
+.stagger-children-scale.scroll-revealed > *:nth-child(3) { transition-delay: 200ms; }
+.scroll-revealed .stagger-children-scale > *:nth-child(4),
+.stagger-children-scale.scroll-revealed > *:nth-child(4) { transition-delay: 300ms; }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Branded text selection */
+::selection {
+  background-color: rgba(37, 99, 235, 0.18);
+  color: inherit;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .stagger-children > *,
+  .stagger-children-left > *,
+  .stagger-children-scale > * {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-entrance,
+  .hero-entrance-right {
+    opacity: 1;
+  }
+
+  .hero-float {
+    animation: none;
+  }
+
+  .hero-float.hero-entrance-right {
+    animation: none;
+    opacity: 1;
+  }
+}

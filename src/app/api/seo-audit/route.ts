@@ -798,6 +798,12 @@ async function analyzeOffPageSeo(domain: string, html: string): Promise<{ checks
         referringDomains = Math.max(Math.floor(estimatedBacklinks * 0.35), brandResults.length * 10)
       }
     } catch { /* skip */ }
+
+    // Fallback: always derive estimates from indexed pages if brand search didn't produce them
+    if (estimatedBacklinks === 0 && indexedPages > 0) {
+      estimatedBacklinks = indexedPages * 3
+      referringDomains = Math.max(Math.floor(estimatedBacklinks * 0.35), 5)
+    }
   }
 
   // Indexed pages check
@@ -945,12 +951,16 @@ export async function POST(request: NextRequest) {
     const actions = generateActions(categories)
     const baseMetrics = generateKeyMetrics(html)
 
-    // Add off-page metrics (estimated values marked with *)
+    // Add off-page metrics (estimated values marked with *), skip any that are 0
+    const offPageMetrics: SeoKeyMetric[] = [
+      { label: 'Indexed Pages', value: offPage.indexedPages > 0 ? String(offPage.indexedPages) + '+' : '', trend: offPage.indexedPages >= 10 ? 'up' : offPage.indexedPages >= 3 ? 'flat' : 'down' },
+      { label: 'Backlinks*', value: offPage.backlinks > 0 ? '~' + offPage.backlinks.toLocaleString() : '', trend: offPage.backlinks >= 100 ? 'up' : 'flat' },
+      { label: 'Ref. Domains*', value: offPage.referringDomains > 0 ? '~' + offPage.referringDomains.toLocaleString() : '', trend: offPage.referringDomains >= 30 ? 'up' : 'flat' },
+    ].filter(m => m.value !== '')
+
     const keyMetrics: SeoKeyMetric[] = [
-      { label: 'Indexed Pages', value: offPage.indexedPages > 0 ? String(offPage.indexedPages) + '+' : 'N/A', trend: offPage.indexedPages >= 10 ? 'up' : offPage.indexedPages >= 3 ? 'flat' : 'down' },
-      { label: 'Backlinks*', value: offPage.backlinks > 0 ? '~' + offPage.backlinks.toLocaleString() : 'N/A', trend: offPage.backlinks >= 100 ? 'up' : 'flat' },
-      { label: 'Ref. Domains*', value: offPage.referringDomains > 0 ? '~' + offPage.referringDomains.toLocaleString() : 'N/A', trend: offPage.referringDomains >= 30 ? 'up' : 'flat' },
-      ...baseMetrics.slice(0, 3), // Word Count, Page Size, Images
+      ...offPageMetrics,
+      ...baseMetrics.slice(0, 6 - offPageMetrics.length), // Fill remaining slots with on-page metrics
     ]
 
     const report: SeoReport = {

@@ -83,7 +83,7 @@ export default function StickyCtaBar() {
             </a>
 
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="inline-flex items-center gap-1.5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/30 whitespace-nowrap"
             >
               ORM Scan
@@ -93,7 +93,7 @@ export default function StickyCtaBar() {
             </a>
 
             <a
-              href="/seo-analysis/"
+              href="/free-seo-audit/"
               className="hidden sm:inline-flex items-center gap-1.5 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/30 whitespace-nowrap"
             >
               SEO Audit

@@ -14,7 +14,7 @@ export const company = {
   founderName: 'Brandon Hopkins',
   founderTitle: 'Founder & President',
   website: 'https://DiamondLinks.com',
-  requestQuoteUrl: '/request-a-quote/',
+  requestQuoteUrl: '/free-orm-scan/',
 }
 
 export const stats = {

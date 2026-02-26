@@ -84,7 +84,7 @@ export default function AboutPage() {
         headline="ORM Specialists Since 2011."
         gradientText="Not Generalists."
         description="We built this agency around one belief: reputation management deserves dedicated specialists, not a generalist team doing ORM on the side."
-        primaryCta={{ label: 'Get Free Analysis', href: '/request-a-quote/' }}
+        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See Our Services', href: '/solutions/online-reputation-management/' }}
         dark={true}
       />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Get an instant, free reputation analysis from DiamondLinks. See what Google shows when people search your name or business — and get a custom ORM strategy.',
 }
 
-export default function RequestAQuotePage() {
+export default function FreeOrmScanPage() {
   return (
     <ScrollReveal>
       <PageHero

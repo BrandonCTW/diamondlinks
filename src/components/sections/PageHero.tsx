@@ -13,7 +13,7 @@ export default function PageHero({
   headline,
   gradientText,
   description,
-  primaryCta = { label: 'Get Free Analysis', href: '/request-a-quote/' },
+  primaryCta = { label: 'Get Free Analysis', href: '/free-orm-scan/' },
   secondaryCta,
   dark = true,
 }: PageHeroProps) {

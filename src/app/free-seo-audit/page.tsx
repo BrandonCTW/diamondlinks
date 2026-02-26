@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Get an instant, free SEO audit from DiamondLinks. Analyze your website\'s technical health, on-page optimization, backlinks, content, and performance — with a custom action plan.',
 }
 
-export default function SeoAnalysisPage() {
+export default function FreeSeoAuditPage() {
   return (
     <ScrollReveal>
       <PageHero

@@ -19,7 +19,7 @@ export default function ContactPage() {
         gradientText="Your Reputation"
         description="Whether you're dealing with a reputation crisis or want to proactively protect your brand, we're here to help. Reach out and we'll respond within 24 hours."
         primaryCta={{ label: 'Call Us Now', href: company.phoneTel }}
-        secondaryCta={{ label: 'Get Free Analysis', href: '/request-a-quote/' }}
+        secondaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         dark={false}
       />
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
             {/* Email / Form */}
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all p-7 group text-center"
             >
               <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mx-auto mb-5">

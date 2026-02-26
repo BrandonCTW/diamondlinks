@@ -54,7 +54,7 @@ export default function AskPage() {
               </svg>
             </a>
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors text-base shadow-lg shadow-blue-600/35"
             >
               Get Free Analysis

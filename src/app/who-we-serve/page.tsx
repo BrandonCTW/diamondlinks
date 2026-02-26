@@ -51,7 +51,7 @@ export default function WhoWeServePage() {
         headline="Reputation Management for"
         gradientText="Every Industry"
         description="From healthcare providers to high-profile athletes, we've built ORM strategies for clients across every major industry. Your reputation challenges are unique — our solutions are, too."
-        primaryCta={{ label: 'Get Free Analysis', href: '/request-a-quote/' }}
+        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'About DiamondLinks', href: '/about/' }}
         dark={true}
       />

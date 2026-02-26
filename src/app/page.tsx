@@ -61,7 +61,7 @@ export default function Home() {
 
             <div className="hero-entrance hero-entrance-d4 flex flex-wrap gap-4 mb-4">
               <a
-                href="/request-a-quote/"
+                href="/free-orm-scan/"
                 className="hero-cta-shimmer inline-flex items-center gap-2.5 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/35 text-base"
               >
                 Get Free Analysis
@@ -497,7 +497,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Free Reputation Analysis
@@ -666,7 +666,7 @@ export default function Home() {
               {/* Bottom CTA */}
               <div className="mt-8 pt-6 border-t border-white/10">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="flex items-center justify-center gap-2 w-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-5 py-3 rounded-xl transition-colors shadow-lg shadow-blue-600/25"
                 >
                   Get Your Free Analysis →
@@ -808,7 +808,7 @@ export default function Home() {
 
               <div className="mt-7 pt-5 border-t border-white/10">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white text-sm font-bold px-5 py-3 rounded-xl hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/25"
                 >
                   Start Your Campaign →
@@ -1002,7 +1002,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis
@@ -1181,7 +1181,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis
@@ -1449,7 +1449,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis
@@ -1759,7 +1759,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis
@@ -1868,7 +1868,7 @@ export default function Home() {
               {/* CTA row */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2.5 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors text-sm shadow-lg shadow-blue-600/25"
                 >
                   Start for Free. No Commitment
@@ -1984,7 +1984,7 @@ export default function Home() {
 
                 {/* Primary CTA */}
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white text-center px-6 py-4 rounded-xl font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/30 text-sm"
                 >
                   Request Free Analysis
@@ -2083,7 +2083,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis
@@ -2262,7 +2262,7 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/request-a-quote/"
+                  href="/free-orm-scan/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
                   Get Your Free Analysis

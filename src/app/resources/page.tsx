@@ -102,7 +102,7 @@ export default function ResourcesPage() {
         headline="Expertise You Can"
         gradientText="Verify"
         description="Case studies, original research, and actionable guides from the team that's managed reputations across every major industry."
-        primaryCta={{ label: 'Get Free Analysis', href: '/request-a-quote/' }}
+        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'Ask DiamondLinks', href: '/ask/' }}
         dark={true}
       />
@@ -204,7 +204,7 @@ export default function ResourcesPage() {
               reports soon. Request a free analysis to get on our list.
             </p>
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
             >
               Get Free Analysis
@@ -286,7 +286,7 @@ export default function ResourcesPage() {
             </a>
 
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all p-7"
             >
               <div className="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5 group-hover:bg-blue-100 transition-colors">

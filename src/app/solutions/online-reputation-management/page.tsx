@@ -96,7 +96,7 @@ export default function OnlineReputationManagementPage() {
         headline="Take Control of"
         gradientText="Your Search Results"
         description="Negative content on page one costs you clients, revenue, and trust. DiamondLinks suppresses what's hurting you and amplifies what should be found — so your brand owns its narrative."
-        primaryCta={{ label: 'Get Free Analysis', href: '/request-a-quote/' }}
+        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See Our Process', href: '#process' }}
       />
 
@@ -215,7 +215,7 @@ export default function OnlineReputationManagementPage() {
         headline="Ready to take control of your search results?"
         subtext="Get a free, confidential analysis of your online reputation. No commitment required."
         ctaLabel="Get Free Analysis"
-        ctaHref="/request-a-quote/"
+        ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
   )

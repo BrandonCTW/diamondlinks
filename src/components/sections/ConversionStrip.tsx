@@ -9,7 +9,7 @@ export default function ConversionStrip({
   headline,
   subtext,
   ctaLabel = 'Get Your Free Analysis',
-  ctaHref = '/request-a-quote/',
+  ctaHref = '/free-orm-scan/',
 }: ConversionStripProps) {
   return (
     <div className="border-t border-gray-200 mt-14 pt-10">

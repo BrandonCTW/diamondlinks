@@ -121,7 +121,7 @@ export default function WhiteLabelReputationManagementPage() {
         headline="ORM Services"
         gradientText="Under Your Brand"
         description="Offer world-class online reputation management to your clients without building a team. DiamondLinks works 100% behind the scenes — your brand, your client, your credit."
-        primaryCta={{ label: 'Become a Partner', href: '/request-a-quote/' }}
+        primaryCta={{ label: 'Become a Partner', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See How It Works', href: '#process' }}
       />
 
@@ -238,7 +238,7 @@ export default function WhiteLabelReputationManagementPage() {
         headline="Ready to offer ORM under your brand?"
         subtext="Join our white label program and start delivering world-class reputation management to your clients."
         ctaLabel="Become a Partner"
-        ctaHref="/request-a-quote/"
+        ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
   )

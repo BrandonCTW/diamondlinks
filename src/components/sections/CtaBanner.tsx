@@ -9,7 +9,7 @@ export default function CtaBanner({
   headline = 'Ready to take control of your search results?',
   subtext = 'Get a free, confidential analysis of your online reputation. No commitment required.',
   ctaLabel = 'Get Free Analysis',
-  ctaHref = '/request-a-quote/',
+  ctaHref = '/free-orm-scan/',
 }: CtaBannerProps) {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 relative overflow-hidden">

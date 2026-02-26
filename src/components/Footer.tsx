@@ -33,13 +33,13 @@ export default function Footer() {
               504.233.4365
             </a>
             <a
-              href="/request-a-quote/"
+              href="/free-orm-scan/"
               className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20"
             >
               Free ORM Scan →
             </a>
             <a
-              href="/seo-analysis/"
+              href="/free-seo-audit/"
               className="bg-indigo-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/20"
             >
               Free SEO Audit →
@@ -108,8 +108,8 @@ export default function Footer() {
               <li><a href="/about/" className="text-gray-500 hover:text-white transition-colors">About Us</a></li>
               <li><a href="/resources/" className="text-gray-500 hover:text-white transition-colors">Resources</a></li>
               <li><a href="/ask/" className="text-gray-500 hover:text-white transition-colors">Ask DiamondLinks</a></li>
-              <li><a href="/request-a-quote/" className="text-gray-500 hover:text-white transition-colors">Free ORM Scan</a></li>
-              <li><a href="/seo-analysis/" className="text-gray-500 hover:text-white transition-colors">Free SEO Audit</a></li>
+              <li><a href="/free-orm-scan/" className="text-gray-500 hover:text-white transition-colors">Free ORM Scan</a></li>
+              <li><a href="/free-seo-audit/" className="text-gray-500 hover:text-white transition-colors">Free SEO Audit</a></li>
               <li><a href="/contact/" className="text-gray-500 hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>

@@ -11,3 +11,5 @@ Run `npm install` then `npm run dev` to start.
 ## Agents
 
 WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/visual-enhancement-agent MODEL="sonnet" MAX_LOOPS=15 bash ~/Projects/claude-lab/ENGINE/run.sh
+
+WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/seo-agent MODEL="sonnet" MAX_LOOPS=15 bash ~/Projects/claude-lab/ENGINE/run.sh

@@ -1,5 +1,6 @@
 export interface SubPageData {
   slug: string
+  category: 'orm' | 'seo'
   title: string
   headline: string
   gradientText: string
@@ -13,6 +14,7 @@ export interface SubPageData {
 export const ormSubPages: SubPageData[] = [
   {
     slug: 'orm-individuals',
+    category: 'orm',
     title: 'ORM for Individuals',
     headline: 'Personal Online',
     gradientText: 'Reputation Management',
@@ -45,6 +47,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'orm-businesses',
+    category: 'orm',
     title: 'ORM for Businesses',
     headline: 'Business Online',
     gradientText: 'Reputation Management',
@@ -77,6 +80,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'social-media-reviews',
+    category: 'orm',
     title: 'Social Media & Review Management',
     headline: 'Social Media &',
     gradientText: 'Review Management',
@@ -109,6 +113,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'google-reviews',
+    category: 'orm',
     title: 'Google Review Management',
     headline: 'Google Review',
     gradientText: 'Management',
@@ -141,6 +146,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'cost-of-orm',
+    category: 'orm',
     title: 'Cost of Online Reputation Management',
     headline: 'How Much Does',
     gradientText: 'ORM Cost?',
@@ -173,6 +179,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'orm-tools',
+    category: 'orm',
     title: 'ORM Tools & Technology',
     headline: 'ORM Tools &',
     gradientText: 'Technology',
@@ -205,6 +212,7 @@ export const ormSubPages: SubPageData[] = [
   },
   {
     slug: 'orm-consulting',
+    category: 'orm',
     title: 'ORM Consulting',
     headline: 'ORM',
     gradientText: 'Consulting Services',
@@ -240,6 +248,7 @@ export const ormSubPages: SubPageData[] = [
 export const seoSubPages: SubPageData[] = [
   {
     slug: 'link-building',
+    category: 'seo',
     title: 'Link Building Services',
     headline: 'Strategic',
     gradientText: 'Link Building',
@@ -272,6 +281,7 @@ export const seoSubPages: SubPageData[] = [
   },
   {
     slug: 'long-form-content',
+    category: 'seo',
     title: 'Long-Form Content & SEO Writing',
     headline: 'Long-Form Content &',
     gradientText: 'SEO Writing',
@@ -304,6 +314,7 @@ export const seoSubPages: SubPageData[] = [
   },
   {
     slug: 'social-media-management',
+    category: 'seo',
     title: 'Social Media Management',
     headline: 'Social Media',
     gradientText: 'Management',
@@ -336,6 +347,7 @@ export const seoSubPages: SubPageData[] = [
   },
   {
     slug: 'pay-per-click',
+    category: 'seo',
     title: 'Pay-Per-Click (PPC) Advertising',
     headline: 'Pay-Per-Click',
     gradientText: 'Advertising',

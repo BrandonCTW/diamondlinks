@@ -8,8 +8,113 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://diamondlinks.com'),
   title: "DiamondLinks | Online Reputation Management & SEO",
   description: "DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.",
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://diamondlinks.com',
+    siteName: 'DiamondLinks',
+    title: 'DiamondLinks | Online Reputation Management & SEO',
+    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.',
+    images: [
+      {
+        url: '/logo.png',
+        alt: 'DiamondLinks — ORM & SEO Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DiamondLinks | Online Reputation Management & SEO',
+    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.',
+    images: ['/logo.png'],
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://diamondlinks.com/#organization",
+      "name": "DiamondLinks",
+      "url": "https://diamondlinks.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://diamondlinks.com/icon.png",
+      },
+      "description": "DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.",
+      "foundingDate": "2011",
+      "telephone": "+15042334365",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3436 Magazine St #622",
+        "addressLocality": "New Orleans",
+        "addressRegion": "LA",
+        "postalCode": "70115",
+        "addressCountry": "US",
+      },
+      "priceRange": "$$$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "4",
+      },
+      "serviceArea": {
+        "@type": "Country",
+        "name": "United States",
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ORM & SEO Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Online Reputation Management",
+              "url": "https://diamondlinks.com/solutions/online-reputation-management/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Search Engine Optimization",
+              "url": "https://diamondlinks.com/solutions/seo/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "White Label Reputation Management",
+              "url": "https://diamondlinks.com/solutions/white-label-reputation-management/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "White Label SEO",
+              "url": "https://diamondlinks.com/solutions/white-label-seo/",
+            },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://diamondlinks.com/#website",
+      "url": "https://diamondlinks.com",
+      "name": "DiamondLinks",
+      "publisher": { "@id": "https://diamondlinks.com/#organization" },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -20,6 +125,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geist.className} antialiased bg-background text-foreground min-h-screen`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />

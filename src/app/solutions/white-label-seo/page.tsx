@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: 'White Label SEO | DiamondLinks',
   description:
     'White label SEO services for agencies. DiamondLinks delivers strategic link building, content, and technical SEO under your brand — with agency-friendly pricing.',
+  alternates: { canonical: 'https://diamondlinks.com/solutions/white-label-seo/' },
+  openGraph: {
+    title: 'White Label SEO | DiamondLinks',
+    description: 'White label SEO services for agencies. DiamondLinks delivers strategic link building, content, and technical SEO under your brand — with agency-friendly pricing.',
+    url: 'https://diamondlinks.com/solutions/white-label-seo/',
+  },
 }
 
 const features = [
@@ -113,13 +119,47 @@ const faqs = [
   },
 ]
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "White Label SEO",
+  "name": "White Label SEO",
+  "description": "DiamondLinks provides white label SEO services for agencies — strategic link building, content, and technical SEO under your brand with agency-friendly pricing.",
+  "provider": { "@id": "https://diamondlinks.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "url": "https://diamondlinks.com/solutions/white-label-seo/",
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a },
+  })),
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "White Label SEO", "item": "https://diamondlinks.com/solutions/white-label-seo/" },
+  ],
+}
+
 export default function WhiteLabelSeoPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="White Label SEO"
-        headline="SEO Services"
-        gradientText="Under Your Brand"
+        headline="White Label SEO"
+        gradientText="Services for Agencies"
         description="Deliver strategic link building, content, and technical SEO to your clients — without building an in-house team. DiamondLinks operates 100% behind the scenes."
         primaryCta={{ label: 'Become a Partner', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See How It Works', href: '#process' }}
@@ -242,5 +282,6 @@ export default function WhiteLabelSeoPage() {
         ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
+    </>
   )
 }

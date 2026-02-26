@@ -8,11 +8,18 @@ import CtaBanner from '@/components/sections/CtaBanner'
 import FaqAccordion from '@/components/FaqAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import { process, stats } from '@/data/company'
+import { seoSubPages } from '@/data/services'
 
 export const metadata: Metadata = {
   title: 'Search Engine Optimization (SEO) | DiamondLinks',
   description:
     'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 60–120 days.',
+  alternates: { canonical: 'https://diamondlinks.com/solutions/seo/' },
+  openGraph: {
+    title: 'Search Engine Optimization (SEO) | DiamondLinks',
+    description: 'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 60–120 days.',
+    url: 'https://diamondlinks.com/solutions/seo/',
+  },
 }
 
 const features = [
@@ -114,13 +121,47 @@ const faqs = [
   },
 ]
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Search Engine Optimization",
+  "name": "Search Engine Optimization",
+  "description": "DiamondLinks delivers strategic link building, keyword-driven content, and technical SEO that compounds month over month — real organic growth for your business.",
+  "provider": { "@id": "https://diamondlinks.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "url": "https://diamondlinks.com/solutions/seo/",
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a },
+  })),
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Search Engine Optimization", "item": "https://diamondlinks.com/solutions/seo/" },
+  ],
+}
+
 export default function SeoPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="SEO Services"
-        headline="Strategic SEO That"
-        gradientText="Drives Real Growth"
+        headline="Search Engine Optimization"
+        gradientText="That Drives Real Growth"
         description="Organic search is the highest-ROI channel in digital marketing. DiamondLinks delivers strategic link building, keyword-driven content, and technical SEO that compounds month over month."
         primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See Our Process', href: '#process' }}
@@ -176,6 +217,34 @@ export default function SeoPage() {
             headline="Find out how much organic traffic you are leaving on the table."
             subtext="Our free SEO audit reveals your biggest ranking opportunities."
           />
+        </div>
+      </section>
+
+      {/* SEO Sub-Services */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Our Services"
+            title="Explore Our SEO Solutions"
+            subtitle="Specialized SEO services that work together to drive compounding organic growth."
+          />
+          <div className="grid md:grid-cols-2 gap-6 mt-12">
+            {seoSubPages.map((page) => (
+              <a
+                key={page.slug}
+                href={`/${page.slug}/`}
+                className="group bg-gray-50 rounded-2xl border border-gray-100 p-6 hover:border-blue-200 hover:bg-blue-50/30 transition-all"
+              >
+                <h3 className="text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                  {page.title}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{page.description}</p>
+                <span className="inline-flex items-center gap-1 text-blue-600 text-sm font-medium mt-4">
+                  Learn more →
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -248,5 +317,6 @@ export default function SeoPage() {
         ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
+    </>
   )
 }

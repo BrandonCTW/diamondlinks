@@ -8,11 +8,18 @@ import CtaBanner from '@/components/sections/CtaBanner'
 import FaqAccordion from '@/components/FaqAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import { process, stats } from '@/data/company'
+import { ormSubPages } from '@/data/services'
 
 export const metadata: Metadata = {
   title: 'Online Reputation Management | DiamondLinks',
   description:
     'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 60–120 days.',
+  alternates: { canonical: 'https://diamondlinks.com/solutions/online-reputation-management/' },
+  openGraph: {
+    title: 'Online Reputation Management | DiamondLinks',
+    description: 'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 60–120 days.',
+    url: 'https://diamondlinks.com/solutions/online-reputation-management/',
+  },
 }
 
 const features = [
@@ -88,13 +95,47 @@ const statCards = [
   { value: stats.launchTurnaround, label: 'Campaign Launch' },
 ]
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Online Reputation Management",
+  "name": "Online Reputation Management",
+  "description": "DiamondLinks suppresses negative search results, amplifies positive content, and protects your brand reputation online — results in 60–120 days.",
+  "provider": { "@id": "https://diamondlinks.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "url": "https://diamondlinks.com/solutions/online-reputation-management/",
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a },
+  })),
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Online Reputation Management", "item": "https://diamondlinks.com/solutions/online-reputation-management/" },
+  ],
+}
+
 export default function OnlineReputationManagementPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="Online Reputation Management"
-        headline="Take Control of"
-        gradientText="Your Search Results"
+        headline="Online Reputation"
+        gradientText="Management Services"
         description="Negative content on page one costs you clients, revenue, and trust. DiamondLinks suppresses what's hurting you and amplifies what should be found — so your brand owns its narrative."
         primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See Our Process', href: '#process' }}
@@ -151,6 +192,34 @@ export default function OnlineReputationManagementPage() {
             headline="Find out what's really showing up in your search results."
             subtext="Our free analysis reveals every risk and opportunity on page one."
           />
+        </div>
+      </section>
+
+      {/* ORM Sub-Services */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Our Services"
+            title="Explore Our ORM Solutions"
+            subtitle="Each service is a specialized component of a complete reputation management strategy."
+          />
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            {ormSubPages.map((page) => (
+              <a
+                key={page.slug}
+                href={`/${page.slug}/`}
+                className="group bg-gray-50 rounded-2xl border border-gray-100 p-6 hover:border-blue-200 hover:bg-blue-50/30 transition-all"
+              >
+                <h3 className="text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                  {page.title}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{page.description}</p>
+                <span className="inline-flex items-center gap-1 text-blue-600 text-sm font-medium mt-4">
+                  Learn more →
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -218,5 +287,6 @@ export default function OnlineReputationManagementPage() {
         ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
+    </>
   )
 }

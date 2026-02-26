@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: 'Free Reputation Analysis | DiamondLinks',
   description:
     'Get an instant, free reputation analysis from DiamondLinks. See what Google shows when people search your name or business — and get a custom ORM strategy.',
+  alternates: { canonical: 'https://diamondlinks.com/free-orm-scan/' },
+  openGraph: {
+    title: 'Free Reputation Analysis | DiamondLinks',
+    description: 'Get an instant, free reputation analysis from DiamondLinks. See what Google shows when people search your name or business — and get a custom ORM strategy.',
+    url: 'https://diamondlinks.com/free-orm-scan/',
+  },
 }
 
 export default function FreeOrmScanPage() {

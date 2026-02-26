@@ -5,13 +5,30 @@ import CtaBanner from '@/components/sections/CtaBanner'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | DiamondLinks',
+  title: 'Contact DiamondLinks | ORM & SEO Agency | New Orleans',
   description:
     'Get in touch with DiamondLinks. Call 504.233.4365, visit our New Orleans office, or send us a message. We respond within 24 hours.',
+  alternates: { canonical: 'https://diamondlinks.com/contact/' },
+  openGraph: {
+    title: 'Contact DiamondLinks | ORM & SEO Agency | New Orleans',
+    description: 'Get in touch with DiamondLinks. Call 504.233.4365, visit our New Orleans office, or send us a message. We respond within 24 hours.',
+    url: 'https://diamondlinks.com/contact/',
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://diamondlinks.com/contact/" },
+  ],
 }
 
 export default function ContactPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="Contact Us"
@@ -143,5 +160,6 @@ export default function ContactPage() {
         subtext="Call us directly for urgent situations. We offer 24-hour response time for crisis engagements."
       />
     </ScrollReveal>
+    </>
   )
 }

@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: 'White Label Reputation Management | DiamondLinks',
   description:
     'White label ORM services for agencies. DiamondLinks works behind the scenes so you can deliver world-class reputation management under your own brand.',
+  alternates: { canonical: 'https://diamondlinks.com/solutions/white-label-reputation-management/' },
+  openGraph: {
+    title: 'White Label Reputation Management | DiamondLinks',
+    description: 'White label ORM services for agencies. DiamondLinks works behind the scenes so you can deliver world-class reputation management under your own brand.',
+    url: 'https://diamondlinks.com/solutions/white-label-reputation-management/',
+  },
 }
 
 const features = [
@@ -113,13 +119,47 @@ const faqs = [
   },
 ]
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "White Label Reputation Management",
+  "name": "White Label Reputation Management",
+  "description": "DiamondLinks provides white label ORM services for agencies — fully branded deliverables, agency-friendly pricing, and a dedicated account manager. 100% invisible to your clients.",
+  "provider": { "@id": "https://diamondlinks.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "url": "https://diamondlinks.com/solutions/white-label-reputation-management/",
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a },
+  })),
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "White Label Reputation Management", "item": "https://diamondlinks.com/solutions/white-label-reputation-management/" },
+  ],
+}
+
 export default function WhiteLabelReputationManagementPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="White Label ORM"
-        headline="ORM Services"
-        gradientText="Under Your Brand"
+        headline="White Label Reputation"
+        gradientText="Management for Agencies"
         description="Offer world-class online reputation management to your clients without building a team. DiamondLinks works 100% behind the scenes — your brand, your client, your credit."
         primaryCta={{ label: 'Become a Partner', href: '/free-orm-scan/' }}
         secondaryCta={{ label: 'See How It Works', href: '#process' }}
@@ -241,5 +281,6 @@ export default function WhiteLabelReputationManagementPage() {
         ctaHref="/free-orm-scan/"
       />
     </ScrollReveal>
+    </>
   )
 }

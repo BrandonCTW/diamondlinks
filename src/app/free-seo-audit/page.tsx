@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: 'Free SEO Audit | DiamondLinks',
   description:
     'Get an instant, free SEO audit from DiamondLinks. Analyze your website\'s technical health, on-page optimization, backlinks, content, and performance — with a custom action plan.',
+  alternates: { canonical: 'https://diamondlinks.com/free-seo-audit/' },
+  openGraph: {
+    title: 'Free SEO Audit | DiamondLinks',
+    description: "Get an instant, free SEO audit from DiamondLinks. Analyze your website's technical health, on-page optimization, backlinks, content, and performance — with a custom action plan.",
+    url: 'https://diamondlinks.com/free-seo-audit/',
+  },
 }
 
 export default function FreeSeoAuditPage() {

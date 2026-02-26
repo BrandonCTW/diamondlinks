@@ -8,9 +8,24 @@ import SectionHeader from '@/components/sections/SectionHeader'
 import { industries } from '@/data/industries'
 
 export const metadata: Metadata = {
-  title: 'Who We Serve | DiamondLinks',
+  title: 'Reputation Management by Industry | DiamondLinks',
   description:
     'DiamondLinks provides online reputation management for healthcare, legal, athletes, finance, SaaS, marketing agencies, education, and crisis PR.',
+  alternates: { canonical: 'https://diamondlinks.com/who-we-serve/' },
+  openGraph: {
+    title: 'Reputation Management by Industry | DiamondLinks',
+    description: 'DiamondLinks provides online reputation management for healthcare, legal, athletes, finance, SaaS, marketing agencies, education, and crisis PR.',
+    url: 'https://diamondlinks.com/who-we-serve/',
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Who We Serve", "item": "https://diamondlinks.com/who-we-serve/" },
+  ],
 }
 
 const industryIcons: Record<string, string> = {
@@ -45,6 +60,8 @@ const industryDescriptions: Record<string, string> = {
 
 export default function WhoWeServePage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="Who We Serve"
@@ -159,5 +176,6 @@ export default function WhoWeServePage() {
 
       <CtaBanner />
     </ScrollReveal>
+    </>
   )
 }

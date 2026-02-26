@@ -10,9 +10,15 @@ import AnimatedCounter from '@/components/AnimatedCounter'
 import { company, testimonials } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'About Us | DiamondLinks',
+  title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
   description:
     'DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+  alternates: { canonical: 'https://diamondlinks.com/about/' },
+  openGraph: {
+    title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
+    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+    url: 'https://diamondlinks.com/about/',
+  },
 }
 
 const differentiatorFeatures = [
@@ -76,8 +82,46 @@ const timeline = [
   },
 ]
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://diamondlinks.com/#brandon-hopkins",
+  "name": "Brandon Hopkins",
+  "jobTitle": "Founder & President",
+  "worksFor": { "@id": "https://diamondlinks.com/#organization" },
+  "url": "https://diamondlinks.com/about/",
+  "description": "Brandon Hopkins is the Founder & President of DiamondLinks, a New Orleans-based ORM & SEO agency he founded in 2011. With two successful business exits and 15+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
+  "knowsAbout": [
+    "Online Reputation Management",
+    "Search Engine Optimization",
+    "White Label SEO",
+    "Link Building",
+    "Content Strategy",
+    "Personal Brand Management",
+    "Crisis PR",
+  ],
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://diamondlinks.com/about/" },
+  ],
+}
+
 export default function AboutPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <ScrollReveal>
       <PageHero
         eyebrow="About DiamondLinks"
@@ -239,5 +283,6 @@ export default function AboutPage() {
 
       <CtaBanner />
     </ScrollReveal>
+    </>
   )
 }

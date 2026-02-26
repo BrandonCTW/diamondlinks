@@ -1,4 +1,4 @@
-import { SubPageData } from '@/data/services'
+import { SubPageData, ormSubPages, seoSubPages } from '@/data/services'
 import PageHero from '@/components/sections/PageHero'
 import SectionHeader from '@/components/sections/SectionHeader'
 import FeatureGrid from '@/components/sections/FeatureGrid'
@@ -7,8 +7,60 @@ import ConversionStrip from '@/components/sections/ConversionStrip'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export default function ServiceSubPage({ data }: { data: SubPageData }) {
+  const allSiblings = data.category === 'orm' ? ormSubPages : seoSubPages
+  const relatedPages = allSiblings.filter((p) => p.slug !== data.slug).slice(0, 3)
+  const parentLabel = data.category === 'orm' ? 'Online Reputation Management' : 'SEO Services'
+  const parentHref = data.category === 'orm'
+    ? '/solutions/online-reputation-management/'
+    : '/solutions/seo/'
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": a,
+      },
+    })),
+  }
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": data.title,
+    "description": data.description,
+    "provider": { "@id": "https://diamondlinks.com/#organization" },
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "url": `https://diamondlinks.com/${data.slug}/`,
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+      { "@type": "ListItem", "position": 2, "name": parentLabel, "item": `https://diamondlinks.com${parentHref}` },
+      { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://diamondlinks.com/${data.slug}/` },
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <PageHero
         eyebrow={data.title}
@@ -92,6 +144,43 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
           <FaqAccordion faqs={data.faqs} />
         </div>
       </section>
+
+      {/* Related Services */}
+      {relatedPages.length > 0 && (
+        <section className="py-20 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeader
+              eyebrow="Related Services"
+              title={`More ${data.category === 'orm' ? 'ORM' : 'SEO'} Services`}
+            />
+            <div className="grid md:grid-cols-3 gap-6 mt-10">
+              {relatedPages.map((page) => (
+                <a
+                  key={page.slug}
+                  href={`/${page.slug}/`}
+                  className="group bg-white rounded-2xl border border-gray-100 p-6 hover:border-blue-200 hover:bg-blue-50/30 transition-all"
+                >
+                  <h3 className="text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                    {page.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{page.description}</p>
+                  <span className="inline-flex items-center gap-1 text-blue-600 text-sm font-medium mt-4">
+                    Learn more →
+                  </span>
+                </a>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <a
+                href={parentHref}
+                className="text-blue-600 text-sm font-medium hover:underline"
+              >
+                ← Back to {parentLabel}
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Conversion Strip */}
       <section className="py-20 px-6 bg-white">

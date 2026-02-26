@@ -1,9 +1,120 @@
-import FaqAccordion from '@/components/FaqAccordion'
-import ScrollReveal from '@/components/ScrollReveal'
-import AnimatedCounter from '@/components/AnimatedCounter'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
+
+const FaqAccordion = dynamic(() => import('@/components/FaqAccordion'))
+const ScrollReveal = dynamic(() => import('@/components/ScrollReveal'))
+const AnimatedCounter = dynamic(() => import('@/components/AnimatedCounter'))
+
+export const metadata: Metadata = {
+  title: "DiamondLinks | Online Reputation Management & SEO Agency",
+  description: "DiamondLinks is a New Orleans-based ORM & SEO agency. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.",
+  alternates: { canonical: 'https://diamondlinks.com/' },
+  openGraph: {
+    title: 'DiamondLinks | Online Reputation Management & SEO Agency',
+    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.',
+    url: 'https://diamondlinks.com/',
+  },
+}
+
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://diamondlinks.com/#organization",
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Narin C." },
+      "reviewBody": "Having a positive online reputation is vital to any business. Without the online reputation management experience DiamondLinks possesses, there's no telling where we would be today.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rusty T." },
+      "reviewBody": "DiamondLinks was a lifesaver. Finance can be a messy industry, and I feel confident continuing in it by having DiamondLinks manage my online reputation.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Richart R." },
+      "reviewBody": "Brandon and team definitely know what they are doing. From SEO to reputation management they are a great asset and help to our growing list of companies.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Reed G." },
+      "reviewBody": "Brandon Hopkins, the brain behind our SEO strategy. He's done a great job for us and has been key in driving our ranking up along with ranking our content.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    },
+  ],
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does online reputation management take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 60–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove negative news articles or Google reviews?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, content can't be deleted, but it can be pushed off page one. We create and amplify high-authority positive content that outranks negative results, so the first page reflects your real story. In some cases, legal removal is possible, and we'll advise if it applies.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between ORM and SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO focuses on ranking your website higher in search results for target keywords. ORM focuses on controlling what appears when someone searches your name or brand, suppressing damaging content and amplifying positive assets. We often combine both for maximum impact.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer white-label services for agencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We work behind the scenes so your agency can deliver world-class ORM and SEO results under your brand. Our white-label program includes fully branded deliverables, agency-friendly pricing, and a dedicated account manager.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if I need ORM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search your name or brand name right now. If you see negative news, bad reviews, competitor content, or anything you wouldn't want a client or employer to find, you need ORM. A damaging page-one result can cost more than the investment to fix it.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What industries do you specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve clients across healthcare, legal, finance, athletes, SaaS, and marketing agencies — any industry where your online reputation directly impacts business. We've worked with solo executives, national brands, and everything in between.",
+      },
+    },
+  ],
+}
 
 export default function Home() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <ScrollReveal>
       {/* Hero */}
       <section className="relative bg-gray-950 text-white min-h-[calc(100vh-4rem)] flex items-center py-16 px-6 overflow-hidden">
@@ -640,7 +751,7 @@ export default function Home() {
               </blockquote>
 
               <div className="flex items-center gap-3 mb-10">
-                <img src="/brandon-hopkins.jpg" alt="Brandon Hopkins" className="w-10 h-10 rounded-full object-cover border border-blue-500/40 flex-shrink-0" />
+                <Image src="/brandon-hopkins.jpg" alt="Brandon Hopkins" width={40} height={40} className="w-10 h-10 rounded-full object-cover border border-blue-500/40 flex-shrink-0" />
                 <div>
                   <p className="text-white font-semibold text-sm">Brandon Hopkins</p>
                   <p className="text-gray-500 text-xs">Founder &amp; CEO, DiamondLinks</p>
@@ -2287,5 +2398,6 @@ export default function Home() {
       </section>
 
       </ScrollReveal>
+    </>
   );
 }

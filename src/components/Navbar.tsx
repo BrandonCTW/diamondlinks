@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 const solutions = [
   {
@@ -50,7 +51,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="/" className="flex items-center flex-shrink-0">
-          <img src="/logo.png" alt="DiamondLinks" className="h-8 w-auto" />
+          <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} className="h-8 w-auto" priority />
         </a>
 
         {/* Desktop nav */}

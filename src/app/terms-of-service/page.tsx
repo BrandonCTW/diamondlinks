@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | DiamondLinks',
+  alternates: { canonical: 'https://diamondlinks.com/terms-of-service/' },
 }
 
 export default function TermsOfServicePage() {

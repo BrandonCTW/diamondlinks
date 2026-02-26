@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | DiamondLinks',
+  alternates: { canonical: 'https://diamondlinks.com/privacy-policy/' },
 }
 
 export default function PrivacyPolicyPage() {

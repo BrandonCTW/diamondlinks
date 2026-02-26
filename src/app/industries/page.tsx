@@ -10,6 +10,21 @@ export const metadata: Metadata = {
   title: 'Industries We Serve | DiamondLinks',
   description:
     'DiamondLinks provides online reputation management and SEO for healthcare, legal, athletes, financial services, SaaS, marketing agencies, education, and crisis PR.',
+  alternates: { canonical: 'https://diamondlinks.com/industries/' },
+  openGraph: {
+    title: 'Industries We Serve | DiamondLinks',
+    description: 'DiamondLinks provides online reputation management and SEO for healthcare, legal, athletes, financial services, SaaS, marketing agencies, education, and crisis PR.',
+    url: 'https://diamondlinks.com/industries/',
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://diamondlinks.com/industries/" },
+  ],
 }
 
 const industryIcons: Record<string, string> = {
@@ -33,6 +48,8 @@ const industryIcons: Record<string, string> = {
 
 export default function IndustriesPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ScrollReveal>
       <PageHero
         eyebrow="Industries"
@@ -102,5 +119,6 @@ export default function IndustriesPage() {
 
       <CtaBanner />
     </ScrollReveal>
+    </>
   )
 }

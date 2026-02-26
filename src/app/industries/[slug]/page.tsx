@@ -25,9 +25,16 @@ export async function generateMetadata({
     return { title: 'Industry Not Found | DiamondLinks' }
   }
 
+  const url = `https://diamondlinks.com/industries/${industry.slug}/`
   return {
     title: `${industry.name} Reputation Management | DiamondLinks`,
     description: industry.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${industry.name} Reputation Management | DiamondLinks`,
+      description: industry.description,
+      url,
+    },
   }
 }
 
@@ -41,7 +48,39 @@ export default async function IndustryPage({
 
   if (!industry) notFound()
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": industry.faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": a,
+      },
+    })),
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://diamondlinks.com/industries/" },
+      { "@type": "ListItem", "position": 3, "name": industry.name, "item": `https://diamondlinks.com/industries/${industry.slug}/` },
+    ],
+  }
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <ScrollReveal>
       {/* Hero */}
       <PageHero
@@ -155,5 +194,6 @@ export default async function IndustryPage({
 
       <CtaBanner />
     </ScrollReveal>
+    </>
   )
 }

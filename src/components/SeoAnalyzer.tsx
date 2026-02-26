@@ -402,6 +402,11 @@ export default function SeoAnalyzer() {
                     </div>
                   ))}
                 </div>
+                {report.keyMetrics.some(m => m.label.includes('*')) && (
+                  <p className="text-gray-400 text-[11px] mt-3 leading-relaxed">
+                    * Estimated from publicly available search data. <a href="/contact/" className="text-indigo-500 hover:text-indigo-600 font-medium">Request a full audit</a> for precise backlink and domain authority metrics.
+                  </p>
+                )}
               </div>
             </div>
           </RevealSection>

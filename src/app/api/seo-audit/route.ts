@@ -945,11 +945,11 @@ export async function POST(request: NextRequest) {
     const actions = generateActions(categories)
     const baseMetrics = generateKeyMetrics(html)
 
-    // Add off-page metrics
+    // Add off-page metrics (estimated values marked with *)
     const keyMetrics: SeoKeyMetric[] = [
       { label: 'Indexed Pages', value: offPage.indexedPages > 0 ? String(offPage.indexedPages) + '+' : 'N/A', trend: offPage.indexedPages >= 10 ? 'up' : offPage.indexedPages >= 3 ? 'flat' : 'down' },
-      { label: 'Est. Backlinks', value: offPage.backlinks > 0 ? offPage.backlinks.toLocaleString() : 'N/A', trend: offPage.backlinks >= 100 ? 'up' : 'flat' },
-      { label: 'Referring Domains', value: offPage.referringDomains > 0 ? offPage.referringDomains.toLocaleString() : 'N/A', trend: offPage.referringDomains >= 30 ? 'up' : 'flat' },
+      { label: 'Backlinks*', value: offPage.backlinks > 0 ? '~' + offPage.backlinks.toLocaleString() : 'N/A', trend: offPage.backlinks >= 100 ? 'up' : 'flat' },
+      { label: 'Ref. Domains*', value: offPage.referringDomains > 0 ? '~' + offPage.referringDomains.toLocaleString() : 'N/A', trend: offPage.referringDomains >= 30 ? 'up' : 'flat' },
       ...baseMetrics.slice(0, 3), // Word Count, Page Size, Images
     ]
 

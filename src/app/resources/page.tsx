@@ -13,6 +13,7 @@ interface ResourceItem {
   description: string
   industry?: string
   comingSoon: boolean
+  href?: string
 }
 
 const typeLabels: Record<ContentType, string> = {
@@ -40,48 +41,108 @@ const typeIcons: Record<string, string> = {
 const resources: ResourceItem[] = [
   {
     type: 'case-study',
-    title: 'Healthcare Practice Reputation Recovery',
+    title: 'Keyfactor: 1,025% Organic Traffic Growth',
     description:
-      'How a multi-location practice rebuilt patient trust and reclaimed page one after a viral negative review.',
-    industry: 'Healthcare',
-    comingSoon: true,
+      'A cybersecurity leader went from 2,200 to 25,100 monthly visits through strategic SEO, growing top-10 keyword positions from 269 to 1,700.',
+    industry: 'Cybersecurity',
+    comingSoon: false,
+    href: '/case-studies/keyfactor/',
   },
   {
     type: 'case-study',
-    title: 'SaaS Company Crisis Response',
+    title: 'Fireworks.ai: 1,100% Traffic Surge for AI SaaS',
     description:
-      'Rapid reputation recovery for a B2B software company following a product outage that generated national press coverage.',
+      'An AI production workflow company grew from 416 to 4,500 monthly visits, with organic keywords exploding from 221 to 4,500.',
+    industry: 'SaaS / AI',
+    comingSoon: false,
+    href: '/case-studies/fireworks-ai/',
+  },
+  {
+    type: 'case-study',
+    title: 'Mountain View Retreat: From Crisis to Growth',
+    description:
+      'A struggling rehab center on the brink of closure gained 118,000+ impressions, 620+ clicks, and 3 new admissions in the first week of tracking.',
+    industry: 'Healthcare',
+    comingSoon: false,
+    href: '/case-studies/mountain-view-retreat/',
+  },
+  {
+    type: 'case-study',
+    title: 'Abita View: 60% to 98% Occupancy',
+    description:
+      'A post-COVID apartment complex went from 60% to 98% occupancy through local SEO, with 206% increase in organic traffic.',
+    industry: 'Real Estate',
+    comingSoon: false,
+    href: '/case-studies/abita-view/',
+  },
+  {
+    type: 'case-study',
+    title: 'ALV Flooring: #1 Rankings in 26 Days',
+    description:
+      'A family-owned flooring company outranked Home Depot locally, with a 217% keyword increase and 333% jump in sales calls.',
+    industry: 'Local Business',
+    comingSoon: false,
+    href: '/case-studies/alv-flooring/',
+  },
+  {
+    type: 'case-study',
+    title: 'Profisee: 430% Organic Traffic Growth',
+    description:
+      'A data management leader grew from 2,100 to 10,100 monthly visits with domain rating climbing from 41 to 58.',
+    industry: 'Data Management',
+    comingSoon: false,
+    href: '/case-studies/profisee/',
+  },
+  {
+    type: 'case-study',
+    title: 'Mannington Commercial: Enterprise SEO at Scale',
+    description:
+      'A leading commercial flooring provider grew traffic from 11,800 to 17,300 monthly visits with referring domains nearly tripling.',
+    industry: 'Commercial Flooring',
+    comingSoon: false,
+    href: '/case-studies/mannington-commercial/',
+  },
+  {
+    type: 'case-study',
+    title: 'Flight Providers: 1,600% Keyword Growth',
+    description:
+      'A skydiving company went from 2 to 32 ranking keywords in under 4 months, with bookings increasing as early as December 2024.',
+    industry: 'Adventure Tourism',
+    comingSoon: false,
+    href: '/case-studies/flight-providers/',
+  },
+  {
+    type: 'case-study',
+    title: 'Inspect & Track: SaaS Visibility Boost',
+    description:
+      'An asset tracking software company grew organic traffic from 669 to 1,200 monthly visits with referring domains more than doubling.',
     industry: 'SaaS',
-    comingSoon: true,
-  },
-  {
-    type: 'research',
-    title: '2026 State of Online Reputation Management',
-    description:
-      'Annual industry report covering ORM trends, consumer behavior shifts, and benchmarks across eight major verticals.',
-    comingSoon: true,
-  },
-  {
-    type: 'research',
-    title: 'The ROI of Reputation Management',
-    description:
-      'Data-driven analysis of how online reputation directly impacts revenue, customer acquisition costs, and brand equity.',
-    comingSoon: true,
+    comingSoon: false,
+    href: '/case-studies/inspect-and-track/',
   },
   {
     type: 'guide',
-    title: "The Executive's Guide to Google Reviews",
+    title: 'Human Insight Meets AI: The Future of Content',
     description:
-      'A comprehensive framework for monitoring, responding to, and leveraging Google reviews to drive business growth.',
-    comingSoon: true,
+      'Why pure AI content fails and how blending human editorial expertise with AI tools creates better SEO outcomes.',
+    comingSoon: false,
+    href: '/resources/blog/human-insight-ai-content/',
   },
   {
     type: 'guide',
-    title: 'ORM for Regulated Industries',
+    title: 'White Label SEO Partnerships: A Guide for Agencies',
     description:
-      'Navigating reputation management under HIPAA, FINRA, and legal ethics rules without compliance risk.',
-    industry: 'Finance & Healthcare',
-    comingSoon: true,
+      'Scaling an agency with white-label SEO lets you offer enterprise-grade search optimization without building an in-house team.',
+    comingSoon: false,
+    href: '/resources/blog/white-label-seo-partnerships/',
+  },
+  {
+    type: 'guide',
+    title: 'Cutting Through the Internet Red Tape',
+    description:
+      'Navigating online reputation challenges means dealing with platform policies, legal gray areas, and bureaucratic removal processes.',
+    comingSoon: false,
+    href: '/resources/blog/cutting-through-internet-red-tape/',
   },
 ]
 
@@ -102,7 +163,7 @@ export default function ResourcesPage() {
         headline="Expertise You Can"
         gradientText="Verify"
         description="Case studies, original research, and actionable guides from the team that's managed reputations across every major industry."
-        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
+        primaryCta={{ label: 'Get a Quote', href: '/request-a-quote/' }}
         secondaryCta={{ label: 'Ask DiamondLinks', href: '/ask/' }}
         dark={true}
       />
@@ -140,74 +201,86 @@ export default function ResourcesPage() {
 
           {/* Cards grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((item) => (
-              <div
-                key={item.title}
-                className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all p-7 flex flex-col"
-              >
-                {/* Type badge + industry */}
-                <div className="flex items-center gap-2 mb-5">
-                  <span
-                    className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full border ${typeBadgeStyles[item.type]}`}
-                  >
-                    <svg
-                      className="w-3 h-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
+            {filtered.map((item) => {
+              const CardTag = item.href ? 'a' : 'div'
+              return (
+                <CardTag
+                  key={item.title}
+                  {...(item.href ? { href: item.href } : {})}
+                  className={`group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all p-7 flex flex-col ${item.href ? 'cursor-pointer' : ''}`}
+                >
+                  {/* Type badge + industry */}
+                  <div className="flex items-center gap-2 mb-5">
+                    <span
+                      className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full border ${typeBadgeStyles[item.type]}`}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d={typeIcons[item.type]}
-                      />
-                    </svg>
-                    {typeLabels[item.type as ContentType]}
-                  </span>
-                  {item.industry && (
-                    <span className="text-xs text-gray-400 font-medium">
-                      {item.industry}
+                      <svg
+                        className="w-3 h-3"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d={typeIcons[item.type]}
+                        />
+                      </svg>
+                      {typeLabels[item.type as ContentType]}
                     </span>
+                    {item.industry && (
+                      <span className="text-xs text-gray-400 font-medium">
+                        {item.industry}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-gray-900 font-bold text-base mb-2 leading-snug group-hover:text-blue-600 transition-colors">
+                    {item.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-1">
+                    {item.description}
+                  </p>
+
+                  {/* CTA or Coming soon */}
+                  {item.comingSoon ? (
+                    <div className="flex items-center gap-2 text-gray-400 text-sm font-medium">
+                      <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+                      </span>
+                      Coming Soon
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-1.5 text-blue-600 text-sm font-semibold">
+                      Read More
+                      <svg className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
                   )}
-                </div>
-
-                {/* Title */}
-                <h3 className="text-gray-900 font-bold text-base mb-2 leading-snug">
-                  {item.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-1">
-                  {item.description}
-                </p>
-
-                {/* Coming soon indicator */}
-                <div className="flex items-center gap-2 text-gray-400 text-sm font-medium">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
-                  </span>
-                  Coming Soon
-                </div>
-              </div>
-            ))}
+                </CardTag>
+              )
+            })}
           </div>
 
-          {/* Notify strip */}
+          {/* CTA strip */}
           <div className="mt-16 bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10 text-center">
             <h3 className="text-gray-900 font-bold text-xl mb-2">
-              Be the first to know
+              Ready to see results like these?
             </h3>
             <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto">
-              We&apos;re publishing our first round of case studies and research
-              reports soon. Request a free analysis to get on our list.
+              Every case study started with a conversation. Get a free SEO audit and discover what&apos;s possible for your business.
             </p>
             <a
-              href="/free-orm-scan/"
+              href="/free-seo-audit/"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
             >
-              Get Free Analysis
+              Get Free SEO Audit
               <svg
                 className="w-4 h-4"
                 fill="none"

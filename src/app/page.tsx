@@ -1920,7 +1920,7 @@ export default function Home() {
                   Our Commitment
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
-                  We Work Until It&apos;s Fixed.{" "}
+                  We Don&apos;t Stop at{" "}
                   <span
                     style={{
                       background: "linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)",
@@ -1929,11 +1929,11 @@ export default function Home() {
                       backgroundClip: "text",
                     }}
                   >
-                    Period.
+                    &ldquo;Good Enough.&rdquo;
                   </span>
                 </h2>
                 <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto">
-                  Our commitment doesn&apos;t end when your invoice is paid. If your first page isn&apos;t moving in the right direction, we adjust the strategy and keep going, because we only succeed when you do.
+                  Our commitment extends beyond implementation. If performance isn&apos;t moving as expected, we recalibrate and refine — prioritizing strategies that generate measurable growth and stronger returns.
                 </p>
               </div>
 

@@ -1958,8 +1958,8 @@ export default function Home() {
                   },
                   {
                     icon: "M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
-                    title: "Results-First Philosophy",
-                    desc: "We measure success by your outcomes, not by hours logged. If it's not working, we pivot.",
+                    title: "Outcome-Driven Philosophy",
+                    desc: "We measure success by tangible improvements in your search rankings, not by the volume of tasks completed.",
                     color: "text-emerald-600",
                     iconBg: "bg-emerald-50 border-emerald-100",
                     accent: "from-emerald-500 to-emerald-400",

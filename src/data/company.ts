@@ -64,10 +64,10 @@ export const testimonials = [
 ]
 
 export const differentiators = [
-  'Full-service SEO and white label partner — trusted by agencies nationwide',
+  'Trained specialists, not just a generalist agency — pushing the needle in the right direction',
   'Custom strategy per client — no templates, no cookie-cutter playbooks',
   'Transparent monthly reporting — you always know exactly what\'s happening',
-  'Results-first philosophy — we don\'t stop until the work is done',
+  'Results-driven philosophy — we measure success by outcomes, not hours logged',
   'No lock-in contracts',
   'All reviews verified; 5-star rated',
 ]

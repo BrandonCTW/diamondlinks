@@ -1624,7 +1624,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12 stagger-children">
-            {/* Case Study 1 */}
+            {/* Case Study 1 — ORM */}
             <div className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden group hover:shadow-md hover:border-blue-100 transition-all flex flex-col">
               <div className="h-1 w-full bg-gradient-to-r from-blue-500 to-blue-400 flex-shrink-0" />
               <div className="p-7 flex flex-col flex-1">
@@ -1632,7 +1632,7 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-5">
                   <span className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
-                    Finance
+                    ORM / Finance
                   </span>
                   <span className="text-gray-400 text-xs font-medium">90 days</span>
                 </div>
@@ -1690,29 +1690,29 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Case Study 2 */}
+            {/* Case Study 2 — SEO */}
             <div className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden group hover:shadow-md hover:border-indigo-100 transition-all flex flex-col">
               <div className="h-1 w-full bg-gradient-to-r from-indigo-500 to-indigo-400 flex-shrink-0" />
               <div className="p-7 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-5">
                   <span className="inline-flex items-center gap-1.5 bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
-                    Corporate / CEO
+                    SaaS / SEO
                   </span>
-                  <span className="text-gray-400 text-xs font-medium">120 days</span>
+                  <span className="text-gray-400 text-xs font-medium">6 months</span>
                 </div>
 
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1.5">The Challenge</p>
                 <p className="text-gray-700 text-sm leading-relaxed mb-5">
-                  A high-profile CEO&apos;s name returned negative press coverage in the top results, directly impacting deal flow, partnership conversations, and investor confidence.
+                  A SaaS platform was invisible in organic search for their core keywords, losing pipeline to competitors who dominated page 1 with stronger content and link profiles.
                 </p>
 
                 {/* Before → After transformation strip */}
                 <div className="flex items-center gap-2 mb-6 bg-gradient-to-r from-red-50 via-gray-50 to-emerald-50 rounded-xl border border-gray-100 p-3">
                   {/* Before */}
                   <div className="flex-1 text-center">
-                    <p className="text-red-500 font-bold text-lg leading-none mb-0.5">Pg. 1</p>
-                    <p className="text-red-400 text-[10px] font-semibold uppercase tracking-wide">Neg. Press</p>
+                    <p className="text-red-500 font-bold text-lg leading-none mb-0.5">Pg. 3+</p>
+                    <p className="text-red-400 text-[10px] font-semibold uppercase tracking-wide">Rankings</p>
                   </div>
                   {/* Arrow connector */}
                   <div className="flex flex-col items-center gap-0.5 flex-shrink-0 px-1">
@@ -1720,26 +1720,26 @@ export default function Home() {
                     <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <div className="text-[8px] font-bold text-gray-400 uppercase tracking-widest">120 days</div>
+                    <div className="text-[8px] font-bold text-gray-400 uppercase tracking-widest">6 months</div>
                   </div>
                   {/* After */}
                   <div className="flex-1 text-center">
-                    <p className="text-emerald-600 font-bold text-lg leading-none mb-0.5">Pg. 1</p>
-                    <p className="text-emerald-500 text-[10px] font-semibold uppercase tracking-wide">Owned</p>
+                    <p className="text-emerald-600 font-bold text-lg leading-none mb-0.5">+312%</p>
+                    <p className="text-emerald-500 text-[10px] font-semibold uppercase tracking-wide">Traffic</p>
                   </div>
                 </div>
 
                 <div className="mt-auto border-t border-gray-50 pt-5">
                   <p className="text-gray-500 text-xs leading-relaxed italic mb-4">
-                    &ldquo;Having a positive online reputation is vital to any business. Without DiamondLinks, there&apos;s no telling where we would be today.&rdquo;
+                    &ldquo;DiamondLinks transformed our online presence. Their strategic approach to content and backlinks gave us visibility we never thought possible.&rdquo;
                   </p>
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-full bg-indigo-600/20 border border-indigo-400/30 flex items-center justify-center flex-shrink-0">
-                      <span className="text-indigo-500 text-[9px] font-bold">NC</span>
+                      <span className="text-indigo-500 text-[9px] font-bold">IT</span>
                     </div>
                     <div>
-                      <p className="text-gray-700 text-xs font-semibold">Narin C.</p>
-                      <p className="text-gray-400 text-xs">CEO, Capital Alliance</p>
+                      <p className="text-gray-700 text-xs font-semibold">Inspect &amp; Track</p>
+                      <p className="text-gray-400 text-xs">SaaS Platform</p>
                     </div>
                     <div className="ml-auto flex gap-0.5">
                       {[...Array(5)].map((_, i) => (
@@ -1753,29 +1753,29 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Case Study 3 */}
+            {/* Case Study 3 — White Label */}
             <div className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden group hover:shadow-md hover:border-violet-100 transition-all flex flex-col">
               <div className="h-1 w-full bg-gradient-to-r from-violet-500 to-violet-400 flex-shrink-0" />
               <div className="p-7 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-5">
                   <span className="inline-flex items-center gap-1.5 bg-violet-50 border border-violet-100 text-violet-600 text-xs font-semibold px-3 py-1 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0" />
-                    Marketing Agency
+                    White Label Agency
                   </span>
-                  <span className="text-gray-400 text-xs font-medium">60 days</span>
+                  <span className="text-gray-400 text-xs font-medium">Ongoing</span>
                 </div>
 
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1.5">The Challenge</p>
                 <p className="text-gray-700 text-sm leading-relaxed mb-5">
-                  A growing SEO agency needed both ORM and SEO support across multiple client brands, requiring a reliable white-label partner who could scale without sacrificing quality.
+                  A growing digital agency needed a white label SEO and ORM partner to scale services across multiple client brands without hiring an in-house team or sacrificing quality.
                 </p>
 
                 {/* Before → After transformation strip */}
                 <div className="flex items-center gap-2 mb-6 bg-gradient-to-r from-red-50 via-gray-50 to-emerald-50 rounded-xl border border-gray-100 p-3">
                   {/* Before */}
                   <div className="flex-1 text-center">
-                    <p className="text-red-500 font-bold text-lg leading-none mb-0.5">Stalled</p>
-                    <p className="text-red-400 text-[10px] font-semibold uppercase tracking-wide">Rankings</p>
+                    <p className="text-red-500 font-bold text-lg leading-none mb-0.5">3</p>
+                    <p className="text-red-400 text-[10px] font-semibold uppercase tracking-wide">Clients</p>
                   </div>
                   {/* Arrow connector */}
                   <div className="flex flex-col items-center gap-0.5 flex-shrink-0 px-1">
@@ -1783,18 +1783,18 @@ export default function Home() {
                     <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <div className="text-[8px] font-bold text-gray-400 uppercase tracking-widest">60 days</div>
+                    <div className="text-[8px] font-bold text-gray-400 uppercase tracking-widest">12 months</div>
                   </div>
                   {/* After */}
                   <div className="flex-1 text-center">
-                    <p className="text-emerald-600 font-bold text-lg leading-none mb-0.5">Page 1</p>
-                    <p className="text-emerald-500 text-[10px] font-semibold uppercase tracking-wide">Achieved</p>
+                    <p className="text-emerald-600 font-bold text-lg leading-none mb-0.5">20+</p>
+                    <p className="text-emerald-500 text-[10px] font-semibold uppercase tracking-wide">Clients</p>
                   </div>
                 </div>
 
                 <div className="mt-auto border-t border-gray-50 pt-5">
                   <p className="text-gray-500 text-xs leading-relaxed italic mb-4">
-                    &ldquo;Brandon and team definitely know what they are doing. From SEO to reputation management they are a great asset.&rdquo;
+                    &ldquo;Brandon and team definitely know what they are doing. From SEO to reputation management they are a great asset to our agency.&rdquo;
                   </p>
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-full bg-violet-600/20 border border-violet-400/30 flex items-center justify-center flex-shrink-0">
@@ -1802,7 +1802,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-gray-700 text-xs font-semibold">Richart R.</p>
-                      <p className="text-gray-400 text-xs">CEO, SEO Company</p>
+                      <p className="text-gray-400 text-xs">CEO, Digital Agency</p>
                     </div>
                     <div className="ml-auto flex gap-0.5">
                       {[...Array(5)].map((_, i) => (

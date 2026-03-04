@@ -123,21 +123,21 @@ export default function FlightProvidersCaseStudyPage() {
 
               {/* Metrics Banner */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-blue-600">1,600%</p>
-                  <p className="text-gray-500 text-sm mt-1">Keyword Growth</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">1,600%</p>
+                  <p className="text-gray-500 text-sm font-medium">Keyword Growth</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-blue-600">300%</p>
-                  <p className="text-gray-500 text-sm mt-1">Traffic Increase</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">300%</p>
+                  <p className="text-gray-500 text-sm font-medium">Traffic Increase</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-blue-600">75</p>
-                  <p className="text-gray-500 text-sm mt-1">New Backlinks</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">+75</p>
+                  <p className="text-gray-500 text-sm font-medium">New Backlinks</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-blue-600">139</p>
-                  <p className="text-gray-500 text-sm mt-1">Referring Domains</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">64 &rarr; 139</p>
+                  <p className="text-gray-500 text-sm font-medium">Referring Domains</p>
                 </div>
               </div>
 
@@ -157,25 +157,25 @@ export default function FlightProvidersCaseStudyPage() {
                 We built a four-pillar strategy designed to move the needle quickly without cutting corners. Every action was intended to compound, building a foundation that would continue to deliver results well beyond the initial campaign window.
               </p>
 
-              <h3 className="text-lg font-bold text-gray-900 pt-2">Keyword Optimization &amp; Competitor Analysis</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Keyword Optimization &amp; Competitor Analysis</h3>
 
               <p>
                 We started with a deep dive into the competitive landscape. Who was ranking for the terms Flight Providers needed to own? What content gaps existed that we could fill? We identified a focused set of high-intent, locally relevant keywords and mapped them to specific pages and content opportunities. This was not a spray-and-pray keyword strategy. Every target was chosen because it represented real search demand from people likely to book a skydive.
               </p>
 
-              <h3 className="text-lg font-bold text-gray-900 pt-2">On-Page SEO &amp; Content Development</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">On-Page SEO &amp; Content Development</h3>
 
               <p>
                 With our keyword targets in place, we conducted a thorough content audit of the existing site. We optimized existing pages for search intent, improved meta titles and descriptions, restructured heading hierarchies, and developed new content to fill the gaps we had identified. Every piece of content was written to serve both search engines and the real people reading it, answering the questions potential customers were actually asking and making it easy for them to take the next step toward booking.
               </p>
 
-              <h3 className="text-lg font-bold text-gray-900 pt-2">Backlink Building &amp; Domain Authority</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Backlink Building &amp; Domain Authority</h3>
 
               <p>
                 A site with a Domain Rating of 6 does not rank for competitive terms regardless of how good the on-page SEO is. We implemented a targeted backlink acquisition campaign focused on high-authority domains relevant to tourism, adventure sports, and the Branson market. The goal was not just volume but quality: links from domains that search engines trust, placed in contexts that made editorial sense.
               </p>
 
-              <h3 className="text-lg font-bold text-gray-900 pt-2">Technical SEO &amp; Site Speed</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Technical SEO &amp; Site Speed</h3>
 
               <p>
                 We addressed the technical foundation of the site to ensure that search engines could crawl, index, and rank the content effectively. This included site speed optimizations, fixing crawl errors, improving mobile responsiveness, and implementing structured data. These are the unglamorous details that separate sites that rank from sites that do not.
@@ -187,63 +187,63 @@ export default function FlightProvidersCaseStudyPage() {
                 The results came fast. Within less than four months of launching the campaign in August 2024, Flight Providers saw transformative improvements across every key metric.
               </p>
 
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8 space-y-5">
-                <div className="flex items-start gap-4">
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8 divide-y divide-gray-100">
+                <div className="flex items-start gap-4 pb-5">
                   <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold">Organic Keywords: 2 to 32</p>
+                    <p className="text-gray-900 font-bold mb-0.5">Organic Keywords: 2 &rarr; 32</p>
                     <p className="text-gray-500 text-sm">A 1,600% increase in keyword visibility, from near-zero to a meaningful footprint across locally relevant search terms.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 py-5">
                   <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold">Domain Rating: 6 to 8</p>
+                    <p className="text-gray-900 font-bold mb-0.5">Domain Rating: 6 &rarr; 8</p>
                     <p className="text-gray-500 text-sm">A 33% improvement in domain authority, strengthening the site&apos;s ability to compete for more difficult keywords over time.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 py-5">
                   <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m9.86-2.54a4.5 4.5 0 0 0-1.242-7.244l4.5-4.5a4.5 4.5 0 0 1 6.364 6.364l-1.757 1.757" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold">75 New Backlinks, Referring Domains 64 to 139</p>
+                    <p className="text-gray-900 font-bold mb-0.5">+75 Backlinks, Referring Domains 64 &rarr; 139</p>
                     <p className="text-gray-500 text-sm">More than doubling the number of referring domains, with backlinks earned from high-authority, editorially relevant sources.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 py-5">
                   <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold">Organic Traffic Increased by 300%</p>
+                    <p className="text-gray-900 font-bold mb-0.5">Organic Traffic Increased by 300%</p>
                     <p className="text-gray-500 text-sm">A fourfold increase in the number of people finding Flight Providers through search engines every month.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 pt-5">
                   <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold">Bookings Increasing by December 2024</p>
+                    <p className="text-gray-900 font-bold mb-0.5">Bookings Increasing by December 2024</p>
                     <p className="text-gray-500 text-sm">The most important metric of all: real customers booking real skydives, driven by organic search traffic.</p>
                   </div>
                 </div>
@@ -271,16 +271,16 @@ export default function FlightProvidersCaseStudyPage() {
             {/* CTA Card */}
             <div className="mt-16 bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10 text-center">
               <h3 className="text-gray-900 font-bold text-xl mb-2">
-                Ready to see results like these?
+                Ready to see results like Flight Providers&apos;?
               </h3>
               <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto">
                 Find out how DiamondLinks can build an SEO strategy tailored to your business and start driving real traffic and revenue.
               </p>
               <Link
-                href="/solutions/seo/"
+                href="/free-seo-audit/"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
               >
-                Our SEO Services
+                Get Your Free SEO Audit
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>

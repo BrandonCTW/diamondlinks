@@ -172,30 +172,90 @@ export default function KeyfactorCaseStudyPage() {
               </p>
 
               {/* Results Grid */}
-              <div className="grid sm:grid-cols-2 gap-4 py-6">
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">60 &rarr; 71</p>
-                  <p className="text-gray-500 text-sm font-medium">Domain Rating</p>
+              <div className="grid sm:grid-cols-2 gap-4 py-4">
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Domain Rating</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    60 &rarr; 71
+                  </p>
                 </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">+886</p>
-                  <p className="text-gray-500 text-sm font-medium">New Backlinks Acquired</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">New Backlinks Acquired</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    +886
+                  </p>
                 </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">593 &rarr; 2,700</p>
-                  <p className="text-gray-500 text-sm font-medium">Referring Domains</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Referring Domains</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    593 &rarr; 2,700
+                  </p>
                 </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">1,025%</p>
-                  <p className="text-gray-500 text-sm font-medium">Organic Traffic Increase</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Organic Traffic Increase</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    1,025%
+                  </p>
                 </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">4,300 &rarr; 12,600</p>
-                  <p className="text-gray-500 text-sm font-medium">Organic Keywords</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Organic Keywords</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    4,300 &rarr; 12,600
+                  </p>
                 </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-3xl font-bold text-blue-600 mb-1">269 &rarr; 1,700</p>
-                  <p className="text-gray-500 text-sm font-medium">Top 10 Keyword Positions</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Top 10 Keyword Positions</p>
+                  <p
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    269 &rarr; 1,700
+                  </p>
                 </div>
               </div>
 

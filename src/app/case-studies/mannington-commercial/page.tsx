@@ -123,21 +123,21 @@ export default function ManningtonCommercialCaseStudyPage() {
 
               {/* Results Summary Banner */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl font-bold text-blue-600">+47%</p>
-                  <p className="text-gray-500 text-sm mt-1">Organic Traffic</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">+47%</p>
+                  <p className="text-gray-500 text-sm font-medium">Organic Traffic</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl font-bold text-blue-600">57 &rarr; 60</p>
-                  <p className="text-gray-500 text-sm mt-1">Domain Rating</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">57 &rarr; 60</p>
+                  <p className="text-gray-500 text-sm font-medium">Domain Rating</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl font-bold text-blue-600">68K</p>
-                  <p className="text-gray-500 text-sm mt-1">Total Backlinks</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">68K</p>
+                  <p className="text-gray-500 text-sm font-medium">Total Backlinks</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-center">
-                  <p className="text-2xl font-bold text-blue-600">1,400</p>
-                  <p className="text-gray-500 text-sm mt-1">Referring Domains</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">1,400</p>
+                  <p className="text-gray-500 text-sm font-medium">Referring Domains</p>
                 </div>
               </div>
 
@@ -203,59 +203,59 @@ export default function ManningtonCommercialCaseStudyPage() {
                 The campaign delivered measurable, sustained improvement across every key SEO metric. These were not short-term spikes; they reflect compounding gains built over the course of the engagement.
               </p>
 
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8 my-4">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8 my-8">
+                <div className="divide-y divide-gray-200">
+                  <div className="flex items-start gap-4 pb-6">
                     <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                       </svg>
                     </div>
                     <div>
-                      <p className="text-gray-900 font-bold">Domain Rating: 57 &rarr; 60</p>
-                      <p className="text-gray-500 text-sm mt-1">
+                      <p className="text-gray-900 font-bold text-base">Domain Rating: 57 &rarr; 60</p>
+                      <p className="text-gray-500 text-sm mt-1 leading-relaxed">
                         A 3-point increase in Ahrefs Domain Rating reflects meaningful growth in overall site authority. At this level, each point requires exponentially more high-quality backlinks to achieve.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 py-6">
                     <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m9.86-2.626a4.5 4.5 0 0 0-1.242-7.244l-4.5-4.5a4.5 4.5 0 0 0-6.364 6.364L4.34 8.374" />
                       </svg>
                     </div>
                     <div>
-                      <p className="text-gray-900 font-bold">Backlinks: 42,500 &rarr; 68,000</p>
-                      <p className="text-gray-500 text-sm mt-1">
+                      <p className="text-gray-900 font-bold text-base">Backlinks: 42,500 &rarr; 68,000</p>
+                      <p className="text-gray-500 text-sm mt-1 leading-relaxed">
                         A 60% increase in total backlinks, with referring domains growing from 500 to 1,400 &mdash; a 180% increase in unique linking websites. This diversified backlink profile significantly strengthened Mannington&apos;s search authority.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 py-6">
                     <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                       </svg>
                     </div>
                     <div>
-                      <p className="text-gray-900 font-bold">Organic Traffic: ~11,800 &rarr; 17,300 visits/month</p>
-                      <p className="text-gray-500 text-sm mt-1">
+                      <p className="text-gray-900 font-bold text-base">Organic Traffic: ~11,800 &rarr; 17,300 visits/month</p>
+                      <p className="text-gray-500 text-sm mt-1 leading-relaxed">
                         A 47% increase in monthly organic traffic, translating to approximately 5,500 additional qualified visitors per month &mdash; architects, designers, and facility managers actively researching commercial flooring solutions.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" />
                       </svg>
                     </div>
                     <div>
-                      <p className="text-gray-900 font-bold">Keyword Rankings: Improved 1&ndash;3 Positions Across the Board</p>
-                      <p className="text-gray-500 text-sm mt-1">
+                      <p className="text-gray-900 font-bold text-base">Keyword Rankings: Improved 1&ndash;3 Positions Across the Board</p>
+                      <p className="text-gray-500 text-sm mt-1 leading-relaxed">
                         Broad-based ranking improvements of 1 to 3 positions across targeted keyword clusters. In competitive commercial flooring terms, even a single position improvement can represent a significant increase in click-through rate and qualified traffic.
                       </p>
                     </div>

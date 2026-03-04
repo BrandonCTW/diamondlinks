@@ -145,9 +145,7 @@ export default function MountainViewRetreatCaseStudyPage() {
                 We deployed our AI/AEO Boost Strategy, a comprehensive approach that combines AI-enhanced search optimization with Answer Engine Optimization techniques designed to position clients where modern searchers are actually looking. For Mountain View Retreat, this meant a multi-pronged campaign executed with urgency.
               </p>
 
-              <p className="font-semibold text-gray-900">
-                AI-Enhanced SEO Foundation
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">AI-Enhanced SEO Foundation</h3>
 
               <p>
                 We started with an exhaustive competitive keyword analysis using our AI-powered research tools. This was not a surface-level keyword list. We identified the specific search terms that prospective patients and their families were using in New England, mapped the competitive difficulty of each term, and uncovered content gaps that Mountain View&apos;s competitors had left wide open. We then built a structured content strategy around those gaps, prioritizing terms with high intent and achievable ranking potential.
@@ -157,9 +155,7 @@ export default function MountainViewRetreatCaseStudyPage() {
                 Every page on the site was rebuilt with structured schema markup that helps search engines and AI-powered answer engines understand exactly what Mountain View offers, where they are located, and what makes them a credible treatment option. This markup is increasingly critical as Google and other platforms use structured data to generate featured snippets, knowledge panels, and AI-generated search summaries.
               </p>
 
-              <p className="font-semibold text-gray-900">
-                Hyper-Localization with AEO
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Hyper-Localization with AEO</h3>
 
               <p>
                 Addiction treatment is inherently local. Families searching for help are looking for facilities near them, and Google prioritizes local results for these queries. We tailored every element of Mountain View&apos;s on-site content to reinforce geographic relevance: location-specific landing pages, locally optimized meta tags, and content that naturally referenced the communities and regions served by the facility.
@@ -169,9 +165,7 @@ export default function MountainViewRetreatCaseStudyPage() {
                 Their Google Business Profile received a complete overhaul. We optimized every field, built out service categories, added high-quality photos, and established a system for generating and responding to patient reviews. This was not a one-time update; it was a sustained effort to make the profile a living, active representation of the business.
               </p>
 
-              <p className="font-semibold text-gray-900">
-                Map Pack Domination
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Map Pack Domination</h3>
 
               <p>
                 Getting into Google&apos;s Local Map Pack, the three-result box that appears at the top of local search results, was a priority. For treatment centers, Map Pack visibility is often the difference between getting calls and being invisible. We built a citation profile across healthcare directories, local business listings, and industry-specific platforms. We implemented a review generation strategy to build social proof, and we created location-based content designed to signal relevance to Google&apos;s local algorithm.
@@ -184,22 +178,22 @@ export default function MountainViewRetreatCaseStudyPage() {
               </p>
 
               {/* Results Grid */}
-              <div className="grid sm:grid-cols-2 gap-4 py-4">
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-6">
-                  <p className="text-3xl font-bold text-blue-600">118,000+</p>
-                  <p className="text-gray-500 text-sm mt-1">Total Impressions</p>
+              <div className="grid sm:grid-cols-2 gap-4 py-6">
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">118,000+</p>
+                  <p className="text-gray-500 text-sm font-medium">Total Impressions</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-6">
-                  <p className="text-3xl font-bold text-blue-600">620+</p>
-                  <p className="text-gray-500 text-sm mt-1">Organic Clicks</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">620+</p>
+                  <p className="text-gray-500 text-sm font-medium">Organic Clicks</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-6">
-                  <p className="text-3xl font-bold text-blue-600">3</p>
-                  <p className="text-gray-500 text-sm mt-1">New Admissions in Week One</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">3</p>
+                  <p className="text-gray-500 text-sm font-medium">New Admissions in Week One</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-6">
-                  <p className="text-3xl font-bold text-blue-600">11</p>
-                  <p className="text-gray-500 text-sm mt-1">Tracked Calls Within Days</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
+                  <p className="text-3xl font-bold text-blue-600 mb-1">11</p>
+                  <p className="text-gray-500 text-sm font-medium">Tracked Calls Within Days</p>
                 </div>
               </div>
 

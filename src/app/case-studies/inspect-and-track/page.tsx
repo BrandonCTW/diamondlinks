@@ -122,8 +122,8 @@ export default function InspectAndTrackCaseStudyPage() {
               </p>
 
               {/* Snapshot Card */}
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10 my-10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 sm:p-8 md:p-10 my-10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Industry</p>
                     <p className="text-gray-900 font-bold text-sm">SaaS / Technology</p>
@@ -138,7 +138,17 @@ export default function InspectAndTrackCaseStudyPage() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Traffic Growth</p>
-                    <p className="text-gray-900 font-bold text-sm">+79%</p>
+                    <p
+                      className="font-bold text-sm"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      +79%
+                    </p>
                   </div>
                 </div>
               </div>
@@ -163,20 +173,28 @@ export default function InspectAndTrackCaseStudyPage() {
                 We designed a multi-pronged SEO strategy for Inspect&amp;Track that addressed every layer of their organic growth challenge, from the technical foundation to the content strategy to the off-site authority signals that search engines use to determine ranking eligibility.
               </p>
 
-              <p>
-                <strong className="text-gray-900">Keyword Optimization &amp; Competitor Analysis.</strong> Our first step was a comprehensive audit of Inspect&amp;Track&apos;s keyword landscape compared to their top competitors. We identified the high-value terms they were missing entirely, the terms where they ranked but underperformed, and the emerging search queries in the asset tracking and inspection management space that presented low-competition opportunities. This competitive gap analysis became the foundation for every content and optimization decision that followed.
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Keyword Optimization &amp; Competitor Analysis</h3>
 
               <p>
-                <strong className="text-gray-900">On-Page SEO &amp; Content Development.</strong> Armed with our keyword research, we conducted thorough content audits of Inspect&amp;Track&apos;s existing pages. We restructured title tags, meta descriptions, header hierarchies, and internal linking patterns to better align with target keywords and user search intent. Where we found topical gaps, we developed new content assets, including blog posts, feature comparison pages, and use-case guides, that positioned Inspect&amp;Track as a definitive authority in their space.
+                Our first step was a comprehensive audit of Inspect&amp;Track&apos;s keyword landscape compared to their top competitors. We identified the high-value terms they were missing entirely, the terms where they ranked but underperformed, and the emerging search queries in the asset tracking and inspection management space that presented low-competition opportunities. This competitive gap analysis became the foundation for every content and optimization decision that followed.
               </p>
 
-              <p>
-                <strong className="text-gray-900">Backlink Improvement &amp; Authority Building.</strong> Building domain authority was a central priority. We executed a sustained link building campaign focused on acquiring high-quality backlinks from relevant technology publications, SaaS directories, and industry resources. We maintained a natural anchor text distribution throughout the campaign, mixing branded anchors, exact-match keywords, partial-match phrases, and generic anchors to build a link profile that looked organic and trustworthy to search engines.
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 pt-2">On-Page SEO &amp; Content Development</h3>
 
               <p>
-                <strong className="text-gray-900">Technical SEO &amp; Site Performance.</strong> We performed a detailed technical audit covering site speed, crawlability, mobile responsiveness, schema markup, and Core Web Vitals. We resolved indexation issues, improved page load times, and ensured that search engine crawlers could efficiently discover and render every important page on the site. These technical improvements provided the infrastructure for all of the on-page and off-page work to deliver maximum impact.
+                Armed with our keyword research, we conducted thorough content audits of Inspect&amp;Track&apos;s existing pages. We restructured title tags, meta descriptions, header hierarchies, and internal linking patterns to better align with target keywords and user search intent. Where we found topical gaps, we developed new content assets, including blog posts, feature comparison pages, and use-case guides, that positioned Inspect&amp;Track as a definitive authority in their space.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Backlink Improvement &amp; Authority Building</h3>
+
+              <p>
+                Building domain authority was a central priority. We executed a sustained link building campaign focused on acquiring high-quality backlinks from relevant technology publications, SaaS directories, and industry resources. We maintained a natural anchor text distribution throughout the campaign, mixing branded anchors, exact-match keywords, partial-match phrases, and generic anchors to build a link profile that looked organic and trustworthy to search engines.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-900 pt-2">Technical SEO &amp; Site Performance</h3>
+
+              <p>
+                We performed a detailed technical audit covering site speed, crawlability, mobile responsiveness, schema markup, and Core Web Vitals. We resolved indexation issues, improved page load times, and ensured that search engine crawlers could efficiently discover and render every important page on the site. These technical improvements provided the infrastructure for all of the on-page and off-page work to deliver maximum impact.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 pt-4">The Results</h2>
@@ -186,53 +204,125 @@ export default function InspectAndTrackCaseStudyPage() {
               </p>
 
               {/* Results Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Domain Rating</p>
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-5 my-10">
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 relative overflow-hidden">
+                  <div className="flex items-start justify-between mb-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">Domain Rating</p>
+                    <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-0.5 rounded-full">
+                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      +9%
+                    </span>
+                  </div>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-gray-900">34</span>
-                    <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <svg className="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <span className="text-3xl font-bold text-blue-600">37</span>
+                    <span
+                      className="text-3xl font-bold"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      37
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">A meaningful jump in overall domain authority, reflecting the quality and consistency of backlinks acquired throughout the campaign.</p>
+                  <p className="text-sm text-gray-500 mt-2 leading-relaxed">A meaningful jump in overall domain authority, reflecting the quality and consistency of backlinks acquired throughout the campaign.</p>
                 </div>
 
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Total Backlinks</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 relative overflow-hidden">
+                  <div className="flex items-start justify-between mb-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">Total Backlinks</p>
+                    <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-0.5 rounded-full">
+                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      +98%
+                    </span>
+                  </div>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-gray-900">217</span>
-                    <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <svg className="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <span className="text-3xl font-bold text-blue-600">430</span>
+                    <span
+                      className="text-3xl font-bold"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      430
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">A 98% increase in total backlinks, nearly doubling their link profile with high-quality, relevant placements.</p>
+                  <p className="text-sm text-gray-500 mt-2 leading-relaxed">A 98% increase in total backlinks, nearly doubling their link profile with high-quality, relevant placements.</p>
                 </div>
 
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Referring Domains</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 relative overflow-hidden">
+                  <div className="flex items-start justify-between mb-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">Referring Domains</p>
+                    <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-0.5 rounded-full">
+                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      +157%
+                    </span>
+                  </div>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-gray-900">93</span>
-                    <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <svg className="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <span className="text-3xl font-bold text-blue-600">239</span>
+                    <span
+                      className="text-3xl font-bold"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      239
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">A 157% increase in unique referring domains, dramatically broadening the diversity and strength of their link profile.</p>
+                  <p className="text-sm text-gray-500 mt-2 leading-relaxed">A 157% increase in unique referring domains, dramatically broadening the diversity and strength of their link profile.</p>
                 </div>
 
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Organic Traffic</p>
+                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 relative overflow-hidden">
+                  <div className="flex items-start justify-between mb-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">Organic Traffic</p>
+                    <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-0.5 rounded-full">
+                      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      +79%
+                    </span>
+                  </div>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-gray-900">669</span>
-                    <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <svg className="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                    <span className="text-3xl font-bold text-blue-600">1,200</span>
+                    <span
+                      className="text-3xl font-bold"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      1,200
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">A 79% increase in monthly organic visits, translating directly into more product page views, demo requests, and trial signups.</p>
+                  <p className="text-sm text-gray-500 mt-2 leading-relaxed">A 79% increase in monthly organic visits, translating directly into more product page views, demo requests, and trial signups.</p>
                 </div>
               </div>
 

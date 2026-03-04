@@ -49,6 +49,14 @@ const breadcrumbSchema = {
   ],
 }
 
+/* gradient text helper — keeps JSX cleaner */
+const gradientStyle = {
+  background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  backgroundClip: 'text',
+} as const
+
 export default function FireworksAiCaseStudyPage() {
   return (
     <>
@@ -112,7 +120,7 @@ export default function FireworksAiCaseStudyPage() {
         {/* Article Body */}
         <article className="py-16 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
-            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
+            <div className="space-y-6 text-gray-600 text-[17px] leading-[1.75]">
               <p>
                 Fireworks.ai is a leading company in the AI production workflow space, providing infrastructure and tools that enable developers to deploy and scale generative AI models with speed and efficiency. Operating in one of the most competitive and fast-evolving sectors in technology, Fireworks.ai needed a search presence that matched the caliber of their product. When they came to DiamondLinks in November 2023, we set out to build exactly that.
               </p>
@@ -122,7 +130,7 @@ export default function FireworksAiCaseStudyPage() {
               </p>
 
               {/* The Challenge */}
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">The Challenge</h2>
+              <h2 className="text-2xl font-bold text-gray-900 pt-8 pb-1">The Challenge</h2>
 
               <p>
                 When Fireworks.ai engaged DiamondLinks, their organic search performance had significant room for growth. Despite building a strong product in a high-demand market, their website was not capturing the search traffic their brand deserved. The key metrics at the start of the campaign told the story:
@@ -140,38 +148,38 @@ export default function FireworksAiCaseStudyPage() {
               </p>
 
               {/* Our Approach */}
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">Our Approach</h2>
+              <h2 className="text-2xl font-bold text-gray-900 pt-8 pb-1">Our Approach</h2>
 
               <p>
                 We designed a comprehensive SEO strategy built on four pillars, each reinforcing the others to create compounding results over time.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 pt-2">Keyword Optimization and Competitor Analysis</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-4">Keyword Optimization and Competitor Analysis</h3>
 
               <p>
                 We began with an exhaustive analysis of Fireworks.ai&apos;s competitive landscape. This meant identifying the exact keywords their direct competitors were ranking for, mapping the content gaps where Fireworks.ai had no presence, and prioritizing opportunities based on search volume, ranking difficulty, and business relevance. Rather than chasing vanity keywords, we focused on terms with clear commercial intent that aligned with Fireworks.ai&apos;s product offering and buyer journey.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 pt-2">On-Page SEO and Content Strategy</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-4">On-Page SEO and Content Strategy</h3>
 
               <p>
                 With keyword targets defined, we conducted a thorough content audit of the existing site. We identified pages that were underperforming due to thin content, poor keyword targeting, or suboptimal on-page structure. From there, we developed a content roadmap that included both the optimization of existing pages and the creation of new SEO-optimized content designed to capture traffic across every stage of the funnel. Every piece of content was built with proper heading hierarchy, internal linking, meta optimization, and natural keyword integration.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 pt-2">Backlink Improvement</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-4">Backlink Improvement</h3>
 
               <p>
                 A domain rating of 45 was not sufficient to compete in the AI technology space, where many established players carry domain ratings of 70 or higher. We implemented a strategic link-building campaign focused on acquiring backlinks from high-authority, topically relevant domains. We prioritized a natural anchor text mix to maintain a healthy link profile, and targeted referring domains that would send both authority signals and qualified referral traffic. Every link was earned through genuine outreach and high-quality content placement.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 pt-2">Technical SEO and Site Performance</h3>
+              <h3 className="text-xl font-bold text-gray-900 pt-4">Technical SEO and Site Performance</h3>
 
               <p>
                 Alongside content and link building, we ran technical SEO audits to ensure the site&apos;s foundation could support growth. This included identifying and resolving crawl issues, optimizing site speed and Core Web Vitals, improving URL structure and internal linking architecture, and ensuring proper indexation of priority pages. Technical health is often the invisible factor that separates a site that ranks from one that does not, regardless of how strong the content or link profile may be.
               </p>
 
               {/* The Results */}
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">The Results</h2>
+              <h2 className="text-2xl font-bold text-gray-900 pt-8 pb-1">The Results</h2>
 
               <p>
                 The impact of the campaign was substantial and measurable across every key performance indicator Fireworks.ai set out to improve.
@@ -179,70 +187,38 @@ export default function FireworksAiCaseStudyPage() {
             </div>
 
             {/* Results Stats Grid */}
-            <div className="grid sm:grid-cols-2 gap-5 my-10">
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                <p
-                  className="text-3xl font-bold mb-1"
-                  style={{
-                    background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+            <div className="grid sm:grid-cols-2 gap-4 my-12">
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Organic Traffic</p>
+                <p className="text-4xl font-bold mb-1" style={gradientStyle}>
                   ~1,100%
                 </p>
-                <p className="text-gray-500 text-sm font-medium">Organic Traffic Growth</p>
-                <p className="text-gray-400 text-xs mt-1">416 &rarr; 4,500 visits/mo</p>
+                <p className="text-gray-400 text-xs">416 &rarr; 4,500 visits/mo</p>
               </div>
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                <p
-                  className="text-3xl font-bold mb-1"
-                  style={{
-                    background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Domain Rating</p>
+                <p className="text-4xl font-bold mb-1" style={gradientStyle}>
                   45 &rarr; 56
                 </p>
-                <p className="text-gray-500 text-sm font-medium">Domain Rating</p>
-                <p className="text-gray-400 text-xs mt-1">+11 point increase</p>
+                <p className="text-gray-400 text-xs">+11 point increase</p>
               </div>
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                <p
-                  className="text-3xl font-bold mb-1"
-                  style={{
-                    background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Organic Keywords</p>
+                <p className="text-4xl font-bold mb-1" style={gradientStyle}>
                   221 &rarr; 4,500
                 </p>
-                <p className="text-gray-500 text-sm font-medium">Organic Keywords</p>
-                <p className="text-gray-400 text-xs mt-1">20x keyword growth</p>
+                <p className="text-gray-400 text-xs">20x keyword growth</p>
               </div>
-              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                <p
-                  className="text-3xl font-bold mb-1"
-                  style={{
-                    background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+              <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Referring Domains</p>
+                <p className="text-4xl font-bold mb-1" style={gradientStyle}>
                   286 &rarr; 676
                 </p>
-                <p className="text-gray-500 text-sm font-medium">Referring Domains</p>
-                <p className="text-gray-400 text-xs mt-1">+2.1K new backlinks</p>
+                <p className="text-gray-400 text-xs">+2.1K new backlinks</p>
               </div>
             </div>
 
-            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
+            <div className="space-y-6 text-gray-600 text-[17px] leading-[1.75]">
               <p>
                 <strong className="text-gray-900">Organic traffic grew from approximately 416 to 4,500 monthly visits</strong>, representing roughly an 1,100% increase. This was not a temporary spike from a single viral piece. It was sustained growth built on a broadening keyword footprint and strengthened domain authority.
               </p>
@@ -260,7 +236,7 @@ export default function FireworksAiCaseStudyPage() {
               </p>
 
               {/* Key Takeaway */}
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">Key Takeaway</h2>
+              <h2 className="text-2xl font-bold text-gray-900 pt-8 pb-1">Key Takeaway</h2>
 
               <p>
                 The Fireworks.ai campaign demonstrates what becomes possible when technical excellence, strategic content, and disciplined link building work together over time. There was no single silver bullet. The results came from a coordinated effort across every dimension of SEO, executed consistently and refined based on ongoing performance data.
@@ -276,16 +252,17 @@ export default function FireworksAiCaseStudyPage() {
             </div>
 
             {/* CTA Card */}
-            <div className="mt-16 bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10 text-center">
-              <h3 className="text-gray-900 font-bold text-xl mb-2">
+            <div className="mt-16 rounded-2xl p-8 md:p-10 text-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%)' }}>
+              <div className="absolute inset-0 rounded-2xl border border-blue-100/60 pointer-events-none" />
+              <h3 className="text-gray-900 font-bold text-xl mb-2 relative">
                 Ready for results like these?
               </h3>
-              <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto">
+              <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto relative">
                 See how DiamondLinks can drive measurable organic growth for your business with a data-driven SEO strategy tailored to your market.
               </p>
               <Link
                 href="/free-seo-audit/"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
+                className="relative inline-flex items-center gap-2 bg-blue-600 text-white px-7 py-3.5 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/25"
               >
                 Get Your Free SEO Audit
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

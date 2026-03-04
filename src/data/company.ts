@@ -73,9 +73,8 @@ export const differentiators = [
 ]
 
 export const process = [
-  { phase: 'Week 1–2', title: 'Free Analysis', description: 'Full audit of your search results — every risk and opportunity mapped' },
-  { phase: 'Month 1', title: 'Strategy Delivered', description: 'Custom SEO & ORM roadmap, content plan, and link targets defined' },
-  { phase: 'Month 2–3', title: 'Campaign Launches', description: 'Content goes live, link building begins, positive assets gain authority' },
-  { phase: 'Month 3–6', title: 'Rankings Move', description: 'Rankings climb, organic traffic grows, positive results own page 1' },
+  { phase: 'Week 1–2', title: 'Free Analysis', description: 'Full audit of your search results and websites, every risk and opportunity mapped, strategies developed with you in real time' },
+  { phase: 'Month 1–3', title: 'Campaign Launched', description: 'Custom ORM & SEO roadmap, content plan, and link targets defined; content goes live, link building begins, positive assets gain authority' },
+  { phase: 'Month 3–6', title: 'Rankings Move', description: 'Positive results climb, negative content loses page 1 ground' },
   { phase: 'Ongoing', title: 'Page 1 Owned', description: 'Monthly reporting, continued maintenance, results protected' },
 ]

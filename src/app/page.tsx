@@ -901,11 +901,10 @@ export default function Home() {
 
               <div className="flex-1">
                 {[
-                  { phase: "Week 1–2", title: "Free Analysis", desc: "Full audit of your search results, every risk and opportunity mapped", color: "bg-blue-500", textColor: "text-blue-400", last: false },
-                  { phase: "Month 1", title: "Strategy Delivered", desc: "Custom SEO & ORM roadmap, content plan, and link targets defined", color: "bg-indigo-500", textColor: "text-indigo-400", last: false },
-                  { phase: "Month 2–3", title: "Campaign Launches", desc: "Content goes live, link building begins, positive assets gain authority", color: "bg-violet-500", textColor: "text-violet-400", last: false },
-                  { phase: "Month 3–6", title: "Rankings Move", desc: "Rankings climb, organic traffic grows, page 1 ownership strengthens", color: "bg-emerald-500", textColor: "text-emerald-400", last: false },
-                  { phase: "Ongoing", title: "Page 1 Owned", desc: "Monthly reporting, continued optimization, results compounding", color: "bg-emerald-400", textColor: "text-emerald-300", last: true },
+                  { phase: "Week 1–2", title: "Free Analysis", desc: "Full audit of your search results and websites, every risk and opportunity mapped, strategies developed with you in real time", color: "bg-blue-500", textColor: "text-blue-400", last: false },
+                  { phase: "Month 1–3", title: "Campaign Launched", desc: "Custom ORM & SEO roadmap, content plan, and link targets defined; content goes live, link building begins, positive assets gain authority", color: "bg-indigo-500", textColor: "text-indigo-400", last: false },
+                  { phase: "Month 3–6", title: "Rankings Move", desc: "Positive results climb, negative content loses page 1 ground", color: "bg-emerald-500", textColor: "text-emerald-400", last: false },
+                  { phase: "Ongoing", title: "Page 1 Owned", desc: "Monthly reporting, continued maintenance, results protected", color: "bg-emerald-400", textColor: "text-emerald-300", last: true },
                 ].map((step) => (
                   <div key={step.phase} className="flex gap-4">
                     <div className="flex flex-col items-center flex-shrink-0">

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="relative border-b border-white/[0.06] py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-white font-bold text-lg mb-1">Ready to grow your search visibility?</p>
+            <p className="text-white font-bold text-lg mb-1">Take control of the search results</p>
             <p className="text-gray-500 text-sm">Get a free analysis. No commitment required.</p>
           </div>
           <div className="flex gap-3 flex-wrap flex-shrink-0">

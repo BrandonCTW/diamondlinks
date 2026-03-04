@@ -571,8 +571,8 @@ export default function Home() {
                   statColor: "text-gray-700",
                 },
               ].map((item) => (
-                <div key={item.stat} className={`flex gap-5 border rounded-2xl p-6 shadow-sm ${item.bg}`}>
-                  <div className={`text-3xl font-bold flex-shrink-0 mt-0.5 ${item.statColor} min-w-[4.5rem]`}>{item.stat}</div>
+                <div key={item.stat} className={`flex items-center gap-5 border rounded-2xl p-6 shadow-sm ${item.bg}`}>
+                  <div className={`text-3xl font-bold flex-shrink-0 ${item.statColor} min-w-[4.5rem]`}>{item.stat}</div>
                   <div>
                     <p className="font-bold text-gray-900 mb-1.5 leading-snug">{item.heading}</p>
                     <p className="text-gray-500 text-sm leading-relaxed">{item.body}</p>

@@ -39,7 +39,7 @@ export const ormSubPages: SubPageData[] = [
       { icon: 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z', title: 'Monthly Reporting', description: 'Transparent monthly progress reports showing exactly how your search results have changed.' },
     ],
     faqs: [
-      { q: 'How long does personal ORM take?', a: 'Most individuals see meaningful page 1 improvement within 60–120 days. Deeply entrenched content may take 6–12 months.' },
+      { q: 'How long does personal ORM take?', a: 'Most individuals see meaningful page 1 improvement within 90–120 days. Deeply entrenched content may take 6–12 months.' },
       { q: 'Can you remove content from Google?', a: 'In most cases, content cannot be removed from the source. We suppress it by ranking positive content above it in search results.' },
       { q: 'Is this service confidential?', a: 'Absolutely. All engagements are 100% confidential. We never disclose client names or details.' },
       { q: 'What if new negative content appears?', a: 'Our ongoing monitoring catches new threats early, and the positive content foundation we build provides resilience against future issues.' },
@@ -275,7 +275,7 @@ export const seoSubPages: SubPageData[] = [
     faqs: [
       { q: 'What types of links do you build?', a: 'We build white-hat, editorial links from real, authoritative websites in relevant industries. No PBNs, no spam, no shortcuts that risk penalties.' },
       { q: 'How many links will I get per month?', a: 'Link quantity depends on your package and goals. We focus on quality over quantity — a single link from a high-authority site can outperform dozens of low-quality links.' },
-      { q: 'How long until I see ranking improvements?', a: 'Most clients see measurable ranking improvements within 60–90 days of consistent link building. Competitive niches may take longer.' },
+      { q: 'How long until I see ranking improvements?', a: 'Most clients see measurable ranking improvements within 90–120 days of consistent link building. Competitive niches may take longer.' },
       { q: 'Do you disavow toxic links?', a: 'Yes. As part of our link audit, we identify and disavow toxic or spammy backlinks that may be harming your search performance.' },
     ],
   },
@@ -477,7 +477,7 @@ export const serviceSubPages: SubPageData[] = [
       { q: 'What makes your backlinks "premium"?', a: 'Every link we build is editorially placed on a real, authoritative website with genuine traffic. We never use PBNs, link farms, or paid directory submissions. Each placement is manually vetted for quality and relevance.' },
       { q: 'How many backlinks will I receive per month?', a: 'Quantity depends on your package, but we prioritize quality over volume. A single link from a DA 70+ publication delivers more ranking power than dozens of low-quality links.' },
       { q: 'Are these links safe from Google penalties?', a: 'Yes. Our white-hat approach mirrors how links are naturally earned — through great content placed on real publications. These are the links Google\'s algorithm was designed to reward.' },
-      { q: 'How long until I see ranking improvements from new links?', a: 'Most clients see measurable ranking movement within 60–90 days of consistent link acquisition. Competitive keywords may take longer, but the authority compounds over time.' },
+      { q: 'How long until I see ranking improvements from new links?', a: 'Most clients see measurable ranking movement within 90–120 days of consistent link acquisition. Competitive keywords may take longer, but the authority compounds over time.' },
     ],
   },
   {
@@ -507,7 +507,7 @@ export const serviceSubPages: SubPageData[] = [
       { icon: 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z', title: 'Local Ranking Tracking', description: 'Grid-based local rank tracking showing your visibility across your service area, with monthly progress reports.' },
     ],
     faqs: [
-      { q: 'How long does it take to rank in the Local Pack?', a: 'Most businesses see Local Pack improvements within 60–90 days. Competitive markets may take longer, but consistent optimization builds momentum that compounds over time.' },
+      { q: 'How long does it take to rank in the Local Pack?', a: 'Most businesses see Local Pack improvements within 90–120 days. Competitive markets may take longer, but consistent optimization builds momentum that compounds over time.' },
       { q: 'Do you manage Google Business Profile posts?', a: 'Yes. Regular GBP posts signal activity to Google and keep your profile fresh. We create and publish posts as part of our local SEO strategy.' },
       { q: 'Can you help with multiple locations?', a: 'Absolutely. We manage local SEO campaigns for single-location businesses and multi-location enterprises alike, with location-specific strategies for each.' },
       { q: 'How important are reviews for local SEO?', a: 'Reviews are one of the top three ranking factors for the Local Pack. Review quantity, quality, recency, and your responses all influence where you appear in local search results.' },

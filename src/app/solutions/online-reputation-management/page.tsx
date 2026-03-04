@@ -13,11 +13,11 @@ import { ormSubPages } from '@/data/services'
 export const metadata: Metadata = {
   title: 'Online Reputation Management | DiamondLinks',
   description:
-    'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 60–120 days.',
+    'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 90–120 days.',
   alternates: { canonical: 'https://diamondlinks.com/solutions/online-reputation-management/' },
   openGraph: {
     title: 'Online Reputation Management | DiamondLinks',
-    description: 'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 60–120 days.',
+    description: 'Take control of your search results with DiamondLinks ORM. We suppress negative content, amplify positive stories, and protect your brand — results in 90–120 days.',
     url: 'https://diamondlinks.com/solutions/online-reputation-management/',
   },
 }
@@ -64,7 +64,7 @@ const features = [
 const faqs = [
   {
     q: 'How long does online reputation management take?',
-    a: 'ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 60–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.',
+    a: 'ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 90–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.',
   },
   {
     q: 'Can you remove negative news articles or Google reviews?',
@@ -100,7 +100,7 @@ const serviceSchema = {
   "@type": "Service",
   "serviceType": "Online Reputation Management",
   "name": "Online Reputation Management",
-  "description": "DiamondLinks suppresses negative search results, amplifies positive content, and protects your brand reputation online — results in 60–120 days.",
+  "description": "DiamondLinks suppresses negative search results, amplifies positive content, and protects your brand reputation online — results in 90–120 days.",
   "provider": { "@id": "https://diamondlinks.com/#organization" },
   "areaServed": { "@type": "Country", "name": "United States" },
   "url": "https://diamondlinks.com/solutions/online-reputation-management/",

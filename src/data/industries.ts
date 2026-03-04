@@ -30,13 +30,13 @@ export const industries: IndustryPageData[] = [
     stats: [
       { value: '77%', label: 'of patients use search engines before booking' },
       { value: '84%', label: 'trust online reviews as much as personal referrals' },
-      { value: '60–120', label: 'days to meaningful page 1 improvement' },
+      { value: '90–120', label: 'days to meaningful page 1 improvement' },
       { value: '5.0★', label: 'DiamondLinks verified client rating' },
     ],
     faqs: [
       { q: 'Can you remove negative reviews from Healthgrades or Google?', a: 'In most cases, reviews cannot be deleted. However, we suppress them by amplifying positive content and optimizing your review profiles so that the overall picture patients see is accurate and favorable.' },
       { q: 'How do you handle HIPAA compliance in ORM?', a: 'We never reference specific patients or disclose protected health information. Our strategies focus on building positive content and authority — not responding to individual reviews with patient details.' },
-      { q: 'How long before we see results?', a: 'Most healthcare clients see meaningful page 1 improvement within 60–120 days. Deeply entrenched negative content may take 6–12 months to fully suppress.' },
+      { q: 'How long before we see results?', a: 'Most healthcare clients see meaningful page 1 improvement within 90–120 days. Deeply entrenched negative content may take 6–12 months to fully suppress.' },
       { q: 'Do you work with individual doctors or hospital systems?', a: 'Both. We serve solo practitioners, multi-provider practices, and hospital systems. Each engagement is tailored to the specific reputation challenges you face.' },
     ],
   },
@@ -88,7 +88,7 @@ export const industries: IndustryPageData[] = [
     stats: [
       { value: '89%', label: 'of sponsors research athletes online before deals' },
       { value: '62%', label: 'of athletes have had negative press affect opportunities' },
-      { value: '60–120', label: 'days to meaningful page 1 improvement' },
+      { value: '90–120', label: 'days to meaningful page 1 improvement' },
       { value: '5.0★', label: 'DiamondLinks verified client rating' },
     ],
     faqs: [
@@ -146,7 +146,7 @@ export const industries: IndustryPageData[] = [
     stats: [
       { value: '92%', label: 'of B2B buyers read online reviews before purchasing' },
       { value: '72%', label: 'say negative reviews have caused them to abandon a purchase' },
-      { value: '60–90', label: 'days to measurable page 1 improvement' },
+      { value: '90–120', label: 'days to measurable page 1 improvement' },
       { value: '5.0★', label: 'DiamondLinks verified client rating' },
     ],
     faqs: [

@@ -13,11 +13,11 @@ import { seoSubPages } from '@/data/services'
 export const metadata: Metadata = {
   title: 'Search Engine Optimization (SEO) | DiamondLinks',
   description:
-    'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 60–120 days.',
+    'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 90–120 days.',
   alternates: { canonical: 'https://diamondlinks.com/solutions/seo/' },
   openGraph: {
     title: 'Search Engine Optimization (SEO) | DiamondLinks',
-    description: 'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 60–120 days.',
+    description: 'Strategic SEO services that drive real organic growth. DiamondLinks delivers link building, keyword research, on-page optimization, and content strategy — results in 90–120 days.',
     url: 'https://diamondlinks.com/solutions/seo/',
   },
 }
@@ -97,7 +97,7 @@ const seoProcess = [
 const faqs = [
   {
     q: 'How long does SEO take to show results?',
-    a: 'Most clients see meaningful ranking improvements within 60–120 days, depending on competition and the current state of their site. SEO is a long-term investment — the results compound over time and continue to grow.',
+    a: 'Most clients see meaningful ranking improvements within 90–120 days, depending on competition and the current state of their site. SEO is a long-term investment — the results compound over time and continue to grow.',
   },
   {
     q: 'What makes DiamondLinks SEO different from other agencies?',

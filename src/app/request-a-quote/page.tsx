@@ -34,7 +34,7 @@ export default function RequestAQuotePage() {
         eyebrow="Get Started"
         headline="Start Your Growth"
         gradientText="Strategy"
-        description="17+ years of proven SEO and ORM expertise. Tell us about your situation and we&apos;ll put together a custom strategy."
+        description="15+ years of proven SEO and ORM expertise. Tell us about your situation and we&apos;ll put together a custom strategy."
         dark={false}
       />
 

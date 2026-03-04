@@ -64,7 +64,7 @@ const faqSchema = {
       "name": "How long does online reputation management take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 60–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.",
+        "text": "ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 90–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.",
       },
     },
     {
@@ -180,7 +180,7 @@ export default function Home() {
                 href="/request-a-quote/"
                 className="hero-cta-shimmer inline-flex items-center gap-2.5 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/35 text-base"
               >
-                Get Started
+                Get a Quote
                 <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} style={{ width: 18, height: 18 }}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
@@ -393,7 +393,7 @@ export default function Home() {
                 </svg>
               </div>
               <AnimatedCounter end={30} suffix="+" className="text-gray-900 font-bold text-2xl leading-none mb-1.5 block" />
-              <p className="text-gray-500 text-xs leading-snug">Years ORM &amp; SEO Expertise</p>
+              <p className="text-gray-500 text-xs leading-snug">Years SEO &amp; ORM Expertise</p>
             </div>
 
             {/* Card 3: 15+ Years in Business */}
@@ -414,8 +414,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12c0-.778.099-1.533.284-2.253" />
                 </svg>
               </div>
-              <p className="text-gray-900 font-bold text-2xl leading-none mb-1.5">Nationwide</p>
-              <p className="text-gray-500 text-xs leading-snug">New Orleans-Based · U.S. Clients</p>
+              <p className="text-gray-900 font-bold text-2xl leading-none mb-1.5">North America</p>
+              <p className="text-gray-500 text-xs leading-snug">New Orleans-Based · U.S. &amp; Canada</p>
             </div>
 
           </div>
@@ -440,7 +440,6 @@ export default function Home() {
             {[...Array(2)].flatMap((_, si) =>
               [
                 { name: "Google", letter: "G", color: "#4285F4", bg: "#EEF3FE" },
-                { name: "Yelp", letter: "Y", color: "#d32323", bg: "#FEF2F2" },
                 { name: "Facebook", letter: "f", color: "#1877F2", bg: "#EFF5FF" },
                 { name: "LinkedIn", letter: "in", color: "#0A66C2", bg: "#EEF5FB" },
                 { name: "Glassdoor", letter: "G", color: "#0CAA41", bg: "#ECFDF5" },
@@ -665,7 +664,7 @@ export default function Home() {
               DiamondLinks blends a US-based team of seasoned SEO and ORM professionals with cutting-edge AI tools to deliver campaigns that actually move the needle — faster and smarter.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
-              With 17+ years in business and a proven track record across every major industry, we&apos;ve helped executives, brands, and agencies nationwide build true recovery, visibility, and reputation through data-driven strategy.
+              With 15+ years in business and a proven track record across every major industry, we&apos;ve helped executives, brands, and agencies nationwide build true recovery, visibility, and reputation through data-driven strategy.
             </p>
 
             {/* Key differentiators */}
@@ -693,7 +692,7 @@ export default function Home() {
                 { label: "Founded 2011", color: "bg-gray-50 border-gray-200 text-gray-600" },
                 { label: "New Orleans, LA", color: "bg-blue-50 border-blue-100 text-blue-700" },
                 { label: "5.0 ★ Rated", color: "bg-yellow-50 border-yellow-100 text-yellow-700" },
-                { label: "Nationwide Clients", color: "bg-indigo-50 border-indigo-100 text-indigo-700" },
+                { label: "North American Clients", color: "bg-indigo-50 border-indigo-100 text-indigo-700" },
                 { label: "White-Label Partner", color: "bg-violet-50 border-violet-100 text-violet-700" },
               ].map((chip) => (
                 <span
@@ -822,7 +821,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-5 mb-8 md:mb-0 stagger-children-scale">
               {[
                 {
-                  stat: "60–120",
+                  stat: "90–120",
                   unit: " days",
                   label: "Time to First Results",
                   sub: "Most clients see meaningful page 1 movement within the first campaign cycle",
@@ -1024,7 +1023,7 @@ export default function Home() {
                   <svg className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                   </svg>
-                  Page-1 movement typically in 60–90 days
+                  Page-1 movement typically in 90–120 days
                 </div>
                 <ul className="space-y-2.5 mb-7 flex-1">
                   {["Strategic link building", "Content strategy & creation", "Technical SEO audits", "Keyword ranking growth"].map((item) => (
@@ -1244,7 +1243,7 @@ export default function Home() {
               </div>
               <div className="p-6 space-y-5 bg-white">
                 {[
-                  { label: "Timeline to results", value: "60–120 days, typically" },
+                  { label: "Timeline to results", value: "90–120 days, typically" },
                   { label: "ORM specialization", value: "30+ yrs, ORM-only focus" },
                   { label: "Strategy", value: "Custom playbook per client" },
                   { label: "Reporting", value: "Transparent monthly reports" },
@@ -1466,7 +1465,7 @@ export default function Home() {
                   <svg className="w-3.5 h-3.5 text-violet-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                   </svg>
-                  Most clients see movement within 60–90 days
+                  Most clients see movement within 90–120 days
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import { useState } from 'react'
 const defaultFaqs = [
   {
     q: "How long does online reputation management take?",
-    a: "ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 60–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.",
+    a: "ORM timelines vary by situation severity and competition level, but most clients see meaningful movement within 90–120 days. Suppressing deeply entrenched results can take 6–12 months. We set honest expectations upfront and report progress monthly.",
   },
   {
     q: "Can you remove negative news articles or Google reviews?",

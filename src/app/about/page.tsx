@@ -96,7 +96,7 @@ const personSchema = {
   "jobTitle": "Founder & CEO",
   "worksFor": { "@id": "https://diamondlinks.com/#organization" },
   "url": "https://diamondlinks.com/about/",
-  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, an ORM & SEO agency he founded in California in 2011, now headquartered in New Orleans. With two successful business exits and 17+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
+  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, an ORM & SEO agency he founded in California in 2011, now headquartered in New Orleans. With two successful business exits and 15+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
   "knowsAbout": [
     "Online Reputation Management",
     "Search Engine Optimization",
@@ -190,7 +190,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Brandon founded DiamondLinks in California in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. Now headquartered in New Orleans, the company serves clients nationwide. With two successful exits and 17+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
+                Brandon founded DiamondLinks in California in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. Now headquartered in New Orleans, the company serves clients nationwide. With two successful exits and 15+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
               </p>
               <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-blue-200 pl-5 text-sm">
                 &ldquo;Your online reputation is the first impression you never get to make in person. We exist to make sure the story people find is the real one.&rdquo;

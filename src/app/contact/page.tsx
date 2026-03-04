@@ -34,7 +34,7 @@ export default function ContactPage() {
         eyebrow="Contact Us"
         headline="Ready to See"
         gradientText="the Difference?"
-        description="17+ years of proven SEO and ORM expertise. Whether you're dealing with a reputation crisis or want to proactively grow your visibility, we're here to help. Reach out and we'll respond within 24 hours."
+        description="15+ years of proven SEO and ORM expertise. Whether you're dealing with a reputation crisis or want to proactively grow your visibility, we're here to help. Reach out and we'll respond within 24 hours."
         primaryCta={{ label: 'Call Us Now', href: company.phoneTel }}
         secondaryCta={{ label: 'Request a Quote', href: '/request-a-quote/' }}
         dark={false}

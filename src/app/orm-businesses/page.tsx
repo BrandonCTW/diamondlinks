@@ -6,11 +6,11 @@ const data = ormSubPages.find(p => p.slug === 'orm-businesses')!
 
 export const metadata: Metadata = {
   title: 'Business Online Reputation Management | DiamondLinks',
-  description: 'Business online reputation management that protects your brand from negative reviews, articles, and competitor content. DiamondLinks delivers results in 60–120 days, no lock-in contracts.',
+  description: 'Business online reputation management that protects your brand from negative reviews, articles, and competitor content. DiamondLinks delivers results in 90–120 days, no lock-in contracts.',
   alternates: { canonical: `https://diamondlinks.com/${data.slug}/` },
   openGraph: {
     title: 'Business Online Reputation Management | DiamondLinks',
-    description: 'Business online reputation management that protects your brand from negative reviews, articles, and competitor content. DiamondLinks delivers results in 60–120 days, no lock-in contracts.',
+    description: 'Business online reputation management that protects your brand from negative reviews, articles, and competitor content. DiamondLinks delivers results in 90–120 days, no lock-in contracts.',
     url: `https://diamondlinks.com/${data.slug}/`,
   },
 }

@@ -24,7 +24,7 @@ export const stats = {
   yearsInBusiness: '15+',
   combinedExpertise: '30+',
   rating: '5.0',
-  timeToResults: '60–120 days',
+  timeToResults: '90–120 days',
   deepSuppression: '6–12 months',
   launchTurnaround: '48 hours',
   trafficLift: '+75%',

@@ -8,11 +8,11 @@ const AnimatedCounter = dynamic(() => import('@/components/AnimatedCounter'))
 
 export const metadata: Metadata = {
   title: "DiamondLinks | SEO Agency & White Label Partner",
-  description: "DiamondLinks is a New Orleans-based SEO and white label agency. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.",
+  description: "DiamondLinks is an SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.",
   alternates: { canonical: 'https://diamondlinks.com/' },
   openGraph: {
     title: 'DiamondLinks | SEO Agency & White Label Partner',
-    description: 'DiamondLinks is a New Orleans-based SEO and white label agency. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.',
+    description: 'DiamondLinks is an SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.',
     url: 'https://diamondlinks.com/',
   },
 }
@@ -415,7 +415,7 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-gray-900 font-bold text-2xl leading-none mb-1.5">North America</p>
-              <p className="text-gray-500 text-xs leading-snug">New Orleans-Based · U.S. &amp; Canada</p>
+              <p className="text-gray-500 text-xs leading-snug">US-Based · Serving U.S. &amp; Canada</p>
             </div>
 
           </div>
@@ -690,7 +690,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-2.5 mb-8">
               {[
                 { label: "Founded 2011", color: "bg-gray-50 border-gray-200 text-gray-600" },
-                { label: "New Orleans, LA", color: "bg-blue-50 border-blue-100 text-blue-700" },
+                { label: "US-Based Team", color: "bg-blue-50 border-blue-100 text-blue-700" },
                 { label: "5.0 ★ Rated", color: "bg-yellow-50 border-yellow-100 text-yellow-700" },
                 { label: "North American Clients", color: "bg-indigo-50 border-indigo-100 text-indigo-700" },
                 { label: "White-Label Partner", color: "bg-violet-50 border-violet-100 text-violet-700" },

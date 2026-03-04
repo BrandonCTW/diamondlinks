@@ -5,13 +5,13 @@ import CtaBanner from '@/components/sections/CtaBanner'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
-  title: 'Contact DiamondLinks | ORM & SEO Agency | New Orleans',
+  title: 'Contact DiamondLinks | SEO & White Label Agency',
   description:
-    'Get in touch with DiamondLinks. Call 504.233.4365, visit our New Orleans office, or send us a message. We respond within 24 hours.',
+    'Get in touch with DiamondLinks. Call 504.233.4365 or send us a message. We respond within 24 hours.',
   alternates: { canonical: 'https://diamondlinks.com/contact/' },
   openGraph: {
-    title: 'Contact DiamondLinks | ORM & SEO Agency | New Orleans',
-    description: 'Get in touch with DiamondLinks. Call 504.233.4365, visit our New Orleans office, or send us a message. We respond within 24 hours.',
+    title: 'Contact DiamondLinks | SEO & White Label Agency',
+    description: 'Get in touch with DiamondLinks. Call 504.233.4365 or send us a message. We respond within 24 hours.',
     url: 'https://diamondlinks.com/contact/',
   },
 }

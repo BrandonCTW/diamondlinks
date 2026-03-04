@@ -13,11 +13,11 @@ import { company, testimonials } from '@/data/company'
 export const metadata: Metadata = {
   title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
   description:
-    'DiamondLinks is an ORM & SEO agency founded in California in 2011 by Brandon Hopkins, now headquartered in New Orleans. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+    'DiamondLinks is an SEO and white label agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we deliver strategic SEO, reputation management, and white label services for agencies across North America.',
   alternates: { canonical: 'https://diamondlinks.com/about/' },
   openGraph: {
     title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
-    description: 'DiamondLinks is an ORM & SEO agency founded in California in 2011 by Brandon Hopkins, now headquartered in New Orleans. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+    description: 'DiamondLinks is an SEO and white label agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we deliver strategic SEO, reputation management, and white label services for agencies across North America.',
     url: 'https://diamondlinks.com/about/',
   },
 }
@@ -78,8 +78,8 @@ const timeline = [
   },
   {
     phase: '2021',
-    title: 'Headquartered in New Orleans',
-    description: 'Relocated headquarters to New Orleans, Louisiana, establishing a home base while continuing to serve clients nationwide.',
+    title: 'Serving North America',
+    description: 'Expanded operations to serve clients across the United States and Canada with a fully US-based team.',
   },
   {
     phase: '2022–Present',
@@ -96,7 +96,7 @@ const personSchema = {
   "jobTitle": "Founder & CEO",
   "worksFor": { "@id": "https://diamondlinks.com/#organization" },
   "url": "https://diamondlinks.com/about/",
-  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, an ORM & SEO agency he founded in California in 2011, now headquartered in New Orleans. With two successful business exits and 15+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
+  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, an SEO and white label agency he founded in 2011. With two successful business exits and 15+ years in online reputation management, he specializes in strategic SEO, reputation management, and building authoritative digital presences for agencies, executives, and brands across North America.",
   "knowsAbout": [
     "Online Reputation Management",
     "Search Engine Optimization",
@@ -190,7 +190,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Brandon founded DiamondLinks in California in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. Now headquartered in New Orleans, the company serves clients nationwide. With two successful exits and 15+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
+                Brandon founded DiamondLinks in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. The company now serves clients across the US and Canada. With two successful exits and 15+ years in the reputation management industry, he brings operational discipline and deep SEO and ORM expertise to every engagement.
               </p>
               <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-blue-200 pl-5 text-sm">
                 &ldquo;Your online reputation is the first impression you never get to make in person. We exist to make sure the story people find is the real one.&rdquo;

@@ -10,14 +10,14 @@ const geist = Geist({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://diamondlinks.com'),
   title: "DiamondLinks | SEO Agency & White Label Partner",
-  description: "DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.",
+  description: "DiamondLinks is an SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies across North America.",
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://diamondlinks.com',
     siteName: 'DiamondLinks',
     title: 'DiamondLinks | SEO Agency & White Label Partner',
-    description: 'DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.',
+    description: 'DiamondLinks is an SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies across North America.',
     images: [
       {
         url: '/logo.png',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DiamondLinks | SEO Agency & White Label Partner',
-    description: 'DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.',
+    description: 'DiamondLinks is an SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies across North America.',
     images: ['/logo.png'],
   },
 };
@@ -45,7 +45,7 @@ const organizationSchema = {
         "@type": "ImageObject",
         "url": "https://diamondlinks.com/icon.png",
       },
-      "description": "DiamondLinks is a New Orleans-based SEO and white label agency founded in 2011. Powered by people and perfected with AI, we deliver strategic SEO, reputation management, and white label services for agencies nationwide.",
+      "description": "DiamondLinks is an SEO and white label agency founded in 2011. Powered by people and perfected with AI, we deliver strategic SEO, reputation management, and white label services for agencies across North America.",
       "foundingDate": "2011",
       "telephone": "+15042334365",
       "address": {

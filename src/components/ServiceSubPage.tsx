@@ -86,8 +86,10 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
           </p>
 
           <ConversionStrip
-            headline="Get a free reputation analysis today."
-            subtext="See exactly what people find when they search for you."
+            headline={data.category === 'orm' ? 'Get a free reputation analysis today.' : 'Get a free SEO audit today.'}
+            subtext={data.category === 'orm' ? 'See exactly what people find when they search for you.' : 'Uncover technical issues, content gaps, and ranking opportunities on your site.'}
+            ctaLabel={data.category === 'orm' ? 'Get Your Free Analysis' : 'Get Free Audit'}
+            ctaHref={data.category === 'orm' ? '/free-orm-scan/' : '/free-seo-audit/'}
           />
         </div>
       </section>
